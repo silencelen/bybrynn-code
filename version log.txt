@@ -81,5 +81,10 @@ a.0.8.1 - a.0.8.3
 -small bug fixes. versions saved for backup reasons. no major changes.
 9/12/2023
 
-a.0.8.f 
+a.0.8.4
 -changed artists age, removed mirrorball background sitewide, added new art pages
+9/17/2023
+
+a.0.9.0
+-fills photography page
+(ongoing)
