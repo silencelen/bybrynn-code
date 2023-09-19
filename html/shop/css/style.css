@@ -55,7 +55,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Libre Baskerville', Arial, serif;
   font-weight: 400;
   margin: 0 0 20px 0;
-  padding-top: 30px;
 }
 
 figure {
@@ -182,20 +181,7 @@ div#fh5co-projects-feed {
 
 .page-content {
   margin: 0 auto;
-  max-width: 4000px;
-  width: 85%;
-  padding-bottom: 70px;
-}
-.page-content1 {
-  margin: 0 auto;
-  max-width: 4000px;
-  width: 85%;
-  padding-top: 50px;
-  padding-bottom: 70px;
-}
-.page-content2 {
-  margin: 0 auto;
-  max-width: 700px;
+  max-width: 620px;
   width: 95%;
   padding-top: 70px;
   padding-bottom: 70px;
@@ -267,6 +253,7 @@ div#fh5co-projects-feed {
 }
 
 .pt70 {
+  padding-top: 70px;
 }
 @media screen and (max-width: 480px) {
   .pt70 {
@@ -294,29 +281,13 @@ div#fh5co-projects-feed {
   width: 100%;
   padding: 7px;
 }
-@media(max-width:480px){
+@media(max-width:690px){
   .masonry .masonry-brick {
       position: static!important;
   }
   .fh5co-projects-feed .fh5co-project>a img {
       margin-bottom: 0px;
   }
-}
-
-#special img {
-	padding: 20px;
-}
-
-@media (max-width:1019px) {
-	img#special {
-		display: none;
-		padding: 20px;
-	}
-}
-@media (min-width:1020px) {
-	img#special2 {
-		display: none;
-	}
 }
 /*# sourceMappingURL=style.css.map */
 @media (max-width: 1370px){
@@ -336,7 +307,6 @@ div#fh5co-projects-feed {
         position: unset !important;
     }
 }
-
 
 
 
