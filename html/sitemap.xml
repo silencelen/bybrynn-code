@@ -1,382 +1,412 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-
-<url>
-  <loc>https://bybrynn.com/</loc>
-  <lastmod>2023-07-07T12:24:11+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/about/</loc>
-  <lastmod>2023-07-07T12:24:52+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/</loc>
-  <lastmod>2023-07-07T12:25:24+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/shop/</loc>
-  <lastmod>2023-07-07T12:24:38+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/commissions/</loc>
-  <lastmod>2023-07-07T12:25:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/</loc>
-  <lastmod>2023-07-07T12:26:12+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/photography/</loc>
-  <lastmod>2023-07-07T12:25:52+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/lookwhatyoumademedo/</loc>
-  <lastmod>2023-07-07T12:30:01+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/harrysteyeles/</loc>
-  <lastmod>2023-07-07T12:32:48+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/ophelia/</loc>
-  <lastmod>2023-07-07T12:28:57+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/inthegallery/</loc>
-  <lastmod>2023-07-07T12:32:06+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/bentley&amp;penelope/</loc>
-  <lastmod>2023-07-07T12:34:34+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/deborainthelaundromat/</loc>
-  <lastmod>2023-07-07T12:33:47+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/yelena/</loc>
-  <lastmod>2023-07-07T12:26:45+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/invisiblestring/</loc>
-  <lastmod>2023-07-07T12:31:52+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/billiex2/</loc>
-  <lastmod>2023-07-07T12:34:25+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/littlewomenbyjomarch/</loc>
-  <lastmod>2023-07-07T12:30:11+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/orlainorange/</loc>
-  <lastmod>2023-07-07T12:28:48+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/chadwickbozeman/</loc>
-  <lastmod>2023-07-07T12:34:15+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/spideyx3/</loc>
-  <lastmod>2023-07-07T12:27:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/holdmyhand/</loc>
-  <lastmod>2023-07-07T12:32:28+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/thisiswhatitfeelslike/</loc>
-  <lastmod>2023-07-07T12:27:10+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/letlightbelight/</loc>
-  <lastmod>2023-07-07T12:30:23+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/slotcanyonnv/</loc>
-  <lastmod>2023-07-07T12:27:42+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/ella/</loc>
-  <lastmod>2023-07-07T12:33:38+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/mady&amp;jonathan/</loc>
-  <lastmod>2023-07-07T12:29:52+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/coolgirl/</loc>
-  <lastmod>2023-07-07T12:33:56+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/apromiseofhopeisenoughtofeelfree/</loc>
-  <lastmod>2023-07-07T12:35:06+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/grogu/</loc>
-  <lastmod>2023-07-07T12:33:14+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/latenightsocking/</loc>
-  <lastmod>2023-07-07T12:30:36+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/midnights/</loc>
-  <lastmod>2023-07-07T12:29:25+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/myheart&amp;mylungs/</loc>
-  <lastmod>2023-07-07T12:29:08+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/heartinmyhands/</loc>
-  <lastmod>2023-07-07T12:32:38+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/labyrinth/</loc>
-  <lastmod>2023-07-07T12:30:47+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/jess&amp;gabriel/</loc>
-  <lastmod>2023-07-07T12:31:37+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/getyourheadouttheground/</loc>
-  <lastmod>2023-07-07T12:33:26+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/pluto/</loc>
-  <lastmod>2023-07-07T12:28:05+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/kitschycatclock/</loc>
-  <lastmod>2023-07-07T12:31:04+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/jo&amp;laurie/</loc>
-  <lastmod>2023-07-07T12:31:39+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/walkonthebeach/</loc>
-  <lastmod>2023-07-07T12:26:58+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/aquietlife/</loc>
-  <lastmod>2023-07-07T12:34:56+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/beforethekiss/</loc>
-  <lastmod>2023-07-07T12:34:45+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/conan/</loc>
-  <lastmod>2023-07-07T12:34:06+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/aconcertsixmonthsfromnow/</loc>
-  <lastmod>2023-07-07T12:35:21+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/makenna/</loc>
-  <lastmod>2023-07-07T12:29:37+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/pinkyswear/</loc>
-  <lastmod>2023-07-07T12:28:13+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/snowonthebeach/</loc>
-  <lastmod>2023-07-07T12:27:30+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/gracie/</loc>
-  <lastmod>2023-07-07T12:33:12+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/imamirrorball/</loc>
-  <lastmod>2023-07-07T12:32:16+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/mirrorball/</loc>
-  <lastmod>2023-07-07T12:29:16+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/shiningjustforyou/</loc>
-  <lastmod>2023-07-07T12:27:53+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/photography/img1/</loc>
-  <lastmod>2023-03-19T05:39:34+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/photography/img2/</loc>
-  <lastmod>2023-03-14T10:46:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/photography/img3/</loc>
-  <lastmod>2023-03-14T10:46:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/photography/img4/</loc>
-  <lastmod>2023-03-14T10:46:50+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/photography/img5/</loc>
-  <lastmod>2023-03-14T10:46:50+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/photography/img6/</loc>
-  <lastmod>2023-03-14T10:46:51+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/photography/img7/</loc>
-  <lastmod>2023-03-14T10:46:52+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/photography/img8/</loc>
-  <lastmod>2023-03-14T10:46:52+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/photography/img9/</loc>
-  <lastmod>2023-03-14T10:46:53+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/photography/img10/</loc>
-  <lastmod>2023-03-14T10:46:54+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/photography/img11/</loc>
-  <lastmod>2023-03-14T10:46:55+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/photography/img12/</loc>
-  <lastmod>2023-03-14T10:46:55+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/photography/img13/</loc>
-  <lastmod>2023-03-14T10:46:56+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/photography/img14/</loc>
-  <lastmod>2023-03-14T10:46:56+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/photography/img15/</loc>
-  <lastmod>2023-03-14T10:46:57+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/photography/img16/</loc>
-  <lastmod>2023-03-14T10:46:58+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/photography/img17/</loc>
-  <lastmod>2023-03-14T10:46:58+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/photography/img18/</loc>
-  <lastmod>2023-03-16T02:39:11+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/bentley%26penelope/</loc>
-  <lastmod>2023-07-07T12:34:34+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/mady%26jonathan/</loc>
-  <lastmod>2023-07-07T12:29:52+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/myheart%26mylungs/</loc>
-  <lastmod>2023-07-07T12:29:08+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/jess%26gabriel/</loc>
-  <lastmod>2023-07-07T12:31:37+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/art/jo%26laurie/</loc>
-  <lastmod>2023-07-07T12:31:39+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-
-
+    <url>
+        <loc>https://bybrynn.com</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/about</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/harrysteyeles</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/lookwhatyoumademedo</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/ophelia</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/inthegallery</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/bentley&penelope</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/deborainthelaundromat</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/yelena</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/invisiblestring</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/billiex2</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/littlewomenbyjomarch</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/orlainorange</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/chadwickbozeman</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/spideyx3</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/holdmyhand</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/thisiswhatitfeelslike</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/letlightbelight</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/slotcanyonnv</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/ella</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/mady&jonathan</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/coolgirl</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/apromiseofhopeisenoughtofeelfree</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/grogu</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/latenightsocking</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/midnights</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/myheart&mylungs</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/heartinmyhands</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/labyrinth</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/jess&gabriel</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/getyourheadouttheground</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/pluto</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/kitschycatclock</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/jo&laurie</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/walkonthebeach</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/aquietlife</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/beforethekiss</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/conan</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/makenna</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/aconcertsixmonthsfromnow</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/pinkyswear</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/snowonthebeach</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/gracie</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/imamirrorball</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/shiningjustforyou</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/mirrorball</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/maisie</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/art/withtheflowers</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/portfolio/photography</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/commissions</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/shop</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/shop/babydriverquote</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/shop/bridgerton</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/shop/greetings</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/shop/iloveyou</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/shop/invisiblestring</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/shop/invisiblestringpostcard</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/shop/joandlaurie</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/shop/littlewomen</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/shop/louisamay</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/shop/smileyface</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/shop/tiptheartist</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/shop/3isthemagicnumber2</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/shop/3isthemagicnumber</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/shop/babydriver</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://bybrynn.com/shop/artistalways</loc>
+        <lastmod>2023-09-24</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
 </urlset>
