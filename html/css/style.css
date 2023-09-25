@@ -312,7 +312,7 @@ body {
   background: url(../images/testbackground.webp), #f4efe9; 
   background-size:     cover;                      
   background-repeat:   no-repeat;
-  background-position: center top;
+  background-position: center 25px;
   color: #848484;
   font-weight: 300;
   overflow-x: hidden;
@@ -330,6 +330,30 @@ img {
 
 
 
+@media (min-width:1550px) {
+body {
+  font-family: 'Libre Baskerville', serif;
+  line-height: 1.8;
+  font-size: 16px;
+  height: 100%;
+  background: url(../images/testbackground.webp), #f4efe9; 
+  background-size:     cover;                      
+  background-repeat:   no-repeat;
+  background-position: center top;
+  color: #848484;
+  font-weight: 300;
+  overflow-x: hidden;
+  padding: 1;
+
+}
+	img#special2 {
+		display: none;
+	}
+img {
+  max-width: 35%;
+  
+    }
+}
 
 
 
