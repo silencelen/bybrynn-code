@@ -1,4 +1,4 @@
-@font-face {
+c@font-face {
   font-family: 'Libre Baskerville', serif;
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
   src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
@@ -334,7 +334,7 @@ curator-feed-default-feed-layout {
 }
 
 
-@media (max-width:1019px) {
+@media (max-width:1199px) {
   body {
     font-family: 'Libre Baskerville', serif;
     line-height: 1.8;
@@ -361,7 +361,7 @@ curator-feed-default-feed-layout {
 
 }
 
-@media (min-width:1020px) {
+@media (min-width:1200px) {
   body {
     font-family: 'Libre Baskerville', serif;
     line-height: 1.8;
@@ -390,7 +390,7 @@ curator-feed-default-feed-layout {
 
 
 
-@media (min-width:1550px) {
+@media (min-width:1600px) {
   body {
     font-family: 'Libre Baskerville', serif;
     line-height: 1.8;
