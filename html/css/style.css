@@ -357,6 +357,7 @@ curator-feed-default-feed-layout {
 
   img#special {
     display: none;
+	pointer-events: none;
   }
 
 }
@@ -380,10 +381,12 @@ curator-feed-default-feed-layout {
 
   img#special2 {
     display: none;
+	pointer-events: none;
   }
 
   img {
     max-width: 35%;
+	pointer-events: none;
 
   }
 }
@@ -409,6 +412,7 @@ curator-feed-default-feed-layout {
 
   img#special2 {
     display: none;
+	pointer-events: none;
   }
 
   img {
