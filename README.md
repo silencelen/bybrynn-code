@@ -1,80 +1,188 @@
-# Bybrynn website code repo
-
-offsite repository for html code for transfer and editing use
-
-## Version History
-
-a.0.1.0		
--Added basic html and css structure -added pages and menu links -added copywrite -added instagram link -added logo -shop fully integrated					
-little to no individual page structure other than home/shop/about				
-2/26/2023	
-
-a.0.2.0		
-obtained domain name -corrected logo -added custom font -removed contact page -removed instagram link -added instagram button -added contact link -commisions page done and ready for review -added photography and paintings subpages to portfolio
-Awaiting media for portfolio and input to finalize commissions page				
-2/27/2023	
-
-a0.2.1		
--domain now routing through cloudflare -site now appearing on google and bing -site now being indexed -meta tags updated on all pages -keywords updated on all pages except "img"s -removed seo errors -added sitelist.txt -added robots.txt					
-No visual changes done to site. Qos update for content delivery and general optimization. Beginning to add SEO into site when possible for crawlers to pick up.				
-3/5/2023	
-
-a0.3.0		
--added media to paintings feed -added individual image template -added individual pages for each image on paintings page -links and urls set between paintings and pages -high and low res images created and in use for thumbnail and full size -added anti save feature to all media across site to prevent download					
-Pretty large update for portfolio and subpages. Work coming to mid menu soon				
-3/13/2023										
-												
-a0.4.0		
--added more seo features and backlinks -submitted individual img pages for indexing -removed excess image files (all pages) -removed trace code from original structure(all pages) -html reformatted and condensed(all pages) -html reorganized (all pages) -html optimized by ai(all pages) -site file size reduced 88%					
-a lot of file restructuring after nailing down an architecture, removing of legacy files, and making code for crawler friendly				
-3/18/2023	
-
-a.0.5.0		
--removed individual img pages -optimized and finalized img template -imported, installed, and published new images, titles, descriptions on art page -imported and published images on photo page -added imgs to portfolio page -added content to about page, new image + bio -centered gallery in full view, still working on mobile					
-massive import from brynn of new images, descriptions, titles, and subtitles. Had to delete and redo every image page to fit the new standard. Note: 11 images are currently missing descriptions. And photography will be completely redone when more content becomes available from brynn				
-3/22/2023	
-
-a.0.5.1		
--updated about photo -added instagram feed to about page -updated background -commissions page filled out and solidified -excess bootstrap removed -unexecuting bytes from css and js removed -all images except individual art pages have been converted to webp -some script/style elements have been removed or moved to decrease page load times					
-biggest noticable change here is the filled out commissions page. Also quite a bit of reduction in code tailored to each page has significantly improved loading times				
-4/25/2023	
-
-a.0.5.2		
--gallery css now centers no matter the screen size -added page headers improving SEO -changed page titles to improve SEO -logo and instalogo have been resized and formated to be delievered faster -small bugs and fixes to improve screen load times -removed white background or portfolio page icons					
-lots of just tiny bugs and changes polishing up the current version. Big breakthrough getting the gallery solidified				
-5/8/2023	
-
-	
-a.0.6.0		
--small css tweaks to logo and menu -updated internal links -small text changes (bold, size, italics, etc) -Shop page code updated and live -icon updated for google search purposes					
-shop page is finally filled out. Small convention fixes and reduced layout shift. path (bybrynnm.com/I/)					
-7/1/2023	
-	
-a.0.7.0	
--updated business page -updated phone number 					
-seo update	-updated site to bybrynn
-Big update across the whole site transfering to new domain bybrynn and updating code throughout.	path (bybrynn.com/I/)	
-7/6/2023
-
-a.0.8.0
--updated new path across whole site and migrated to new server entirely
-(bybrynn.com)	
-7/7/2023
-
-a.0.8.1 - a.0.8.3
--small bug fixes. versions saved for backup reasons. no major changes.
-9/12/2023
-
-a.0.8.4
--changed artists age, removed mirrorball background sitewide, added new art pages
-9/17/2023
-
-a.0.9.0
--filling photography page
-(ongoing)
+<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+<a name="readme-top"></a>
+<!--
+*** Thanks for checking out the Best-README-Template. If you have a suggestion
+*** that would make this better, please fork the repo and create a pull request
+*** or simply open an issue with the tag "enhancement".
+*** Don't forget to give the project a star!
+*** Thanks again! Now go create something AMAZING! :D
+-->
 
 
-## Links
 
-* [website](https://bybrynn.com)
-*
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+
+
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/silencelen/bybrynn-code">
+    <img src="html/images/logow.webp" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">Bybrynn-code</h3>
+
+  <p align="center">
+    The offical repo for the active html/css structure of bybrynn.com
+    <br />
+    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://bybrynn.com">View Website</a>
+    ·
+    <a href="https://github.com/silencelen/bybrynn-code/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/silencelen/bybrynn-code/issues">Request Feature</a>
+  </p>
+</div>
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
+Managing a website comes with its challenges, thats why we've institued the bybrynn.com public repo. In an attempt to streamline progress and collaboration, the complete source structure is online for review.
+
+Community review and feedback is heavily encouraged. 
+<br/>
+<br/><br/>
+
+
+## Installation
+How can I access the repo?
+
+### Method 1: Universal
+Clone the repo
+   ```sh
+   git clone https://github.com/silencelen/bybrynn-code
+   ```
+### Method 2: use ./clone command on local server (admin access required)
+issue clone script command
+   ```sh
+   ./clone
+   ```
+### Method 3: issue a direct transfer request
+Email dev with the specified folder paths and depth.
+   ```js
+   webmaster@silencelen.com
+   ```
+<br/>
+<br/><br/>
+
+
+<!-- ROADMAP -->
+## Roadmap
+- [x] Add home page
+- [x] Add about page
+- [x] Add shop page
+- [x] Add portfolio page
+- [x] Add art page
+- [x] Add single pages
+- [ ] Add photography page
+- [ ] Add mobile specific version
+- [ ] Multi-language Support
+    - [ ] Chinese
+    - [ ] Spanish
+
+See the [open issues](https://github.com/silencelen/bybrynn-code/issues) for a full list of proposed features (and known issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE.txt` for more information.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- CONTACT -->
+## Contact
+
+Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+
+Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+
+
+
+
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments
+
+Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+
+* [Choose an Open Source License](https://choosealicense.com)
+* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
+* [Malven's Grid Cheatsheet](https://grid.malven.co/)
+* [Img Shields](https://shields.io)
+* [GitHub Pages](https://pages.github.com)
+* [Font Awesome](https://fontawesome.com)
+* [React Icons](https://react-icons.github.io/react-icons/search)
+
+
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
+[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
+[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/othneildrew
+[product-screenshot]: images/screenshot.png
+[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
+[Next-url]: https://nextjs.org/
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
+[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
+[Vue-url]: https://vuejs.org/
+[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
+[Angular-url]: https://angular.io/
+[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
+[Svelte-url]: https://svelte.dev/
+[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
+[Laravel-url]: https://laravel.com
+[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
+[Bootstrap-url]: https://getbootstrap.com
+[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
+[JQuery-url]: https://jquery.com 
