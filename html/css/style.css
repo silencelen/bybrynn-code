@@ -327,6 +327,12 @@ div#fh5co-projects-feed {
 
   }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #212121;
+  font-family: 'Libre Baskerville', Arial, serif;
+  font-weight: 400;
+  margin: 50px 0 20px 0;
+}
   img#special {
     display: none;
 	pointer-events: none;
