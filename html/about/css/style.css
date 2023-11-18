@@ -30,14 +30,14 @@ body.fh5co-offcanvas {
 }
 
 a {
-  color: #2da9d7;
+  color: #7F7F7F;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover {
   text-decoration: none !important;
-  color: #2da9d7 !important;
+  color: #2C4468 !important;
 }
 a:active, a:focus {
   outline: none;
