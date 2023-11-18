@@ -309,6 +309,10 @@ div#fh5co-projects-feed {
 	img#special2 {
 		display: none;
 	}
+	.elfwidth {
+		max-width: 95%;
+	}
+	
 }
 /*# sourceMappingURL=style.css.map */
 @media (max-width: 1370px){
