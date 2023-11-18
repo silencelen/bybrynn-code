@@ -91,6 +91,9 @@ figure {
   padding: 0;
   margin: 0;
 }
+#elfwidth {
+		max-width: 95%;
+	}
 #fh5co-header nav ul li {
   margin: 0;
   display: -moz-inline-stack;
@@ -127,7 +130,9 @@ div#fh5co-projects-feed {
   margin: 0 auto;
   max-width: 1320px;
 }
-
+.elfwidth {
+		max-width: 95%;
+	}
 .fh5co-projects-feed .fh5co-project {
   display: inline-block;
   margin: 20px 20px 20px;
