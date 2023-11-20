@@ -2,7 +2,7 @@
 	"use strict";
 
 	$(window).load(function() {
-		var $container = $('#fh5co-projects-feed'),
+		var $container = $('.fh5co-projects-feed'),
 		containerWidth = $container.outerWidth();
 
 		$container.masonry({
