@@ -297,17 +297,26 @@ div#fh5co-projects-feed {
     }
 }
 @media (max-width: 1349px){
-    #fh5co-projects-feed{
-        max-width: 990px !important;
-        margin: auto;
-    }
+  #fh5co-projects-feed {
+    max-width: 990px !important;
+    margin: auto;
+
+}
 }
 @media (max-width: 1019px){
+  #fh5co-projects-feed {
+
+    height: auto!important;
+}
     #fh5co-projects-feed div{
         position: unset !important;
     }
 }
 
+#fh5co-projects-feed div img {
+  width: 100%;
+  height: 100%;
+}
 
 
 
