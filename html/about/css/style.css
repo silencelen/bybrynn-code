@@ -30,14 +30,14 @@ body.fh5co-offcanvas {
 }
 
 a {
-  color: #2da9d7;
+  color: #7F7F7F;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover {
   text-decoration: none !important;
-  color: #2da9d7 !important;
+  color: #2C4468 !important;
 }
 a:active, a:focus {
   outline: none;
@@ -91,6 +91,9 @@ figure {
   padding: 0;
   margin: 0;
 }
+#elfwidth {
+		max-width: 95%;
+	}
 #fh5co-header nav ul li {
   margin: 0;
   display: -moz-inline-stack;
@@ -127,7 +130,9 @@ div#fh5co-projects-feed {
   margin: 0 auto;
   max-width: 1320px;
 }
-
+.elfwidth {
+		max-width: 95%;
+	}
 .fh5co-projects-feed .fh5co-project {
   display: inline-block;
   margin: 20px 20px 20px;
@@ -309,6 +314,10 @@ div#fh5co-projects-feed {
 	img#special2 {
 		display: none;
 	}
+	.elfwidth {
+		max-width: 95%;
+	}
+	
 }
 /*# sourceMappingURL=style.css.map */
 @media (max-width: 1370px){
