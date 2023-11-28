@@ -1,5 +1,7 @@
 <!-- Improved compatibility of back to top link: See: https://github.com/silencelen/bybrynn-code/pull/73 -->
+
 <a name="readme-top"></a>
+
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
 *** that would make this better, please fork the repo and create a pull request
@@ -7,8 +9,6 @@
 *** Don't forget to give the project a star!
 *** Thanks again! Now go create something AMAZING! :D
 -->
-
-
 
 <!-- PROJECT SHIELDS -->
 <!--
@@ -18,12 +18,11 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -49,38 +48,49 @@
 </div>
 
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 Managing a website comes with its challenges, thats why we've institued the bybrynn.com public repo. In an attempt to streamline progress and collaboration, the complete source structure is online for review.
 
-Community review and feedback is heavily encouraged. 
+Community review and feedback is heavily encouraged.
 <br/>
 <br/><br/>
 
-
 ## Installation
+
 How can I access the repo?
 
 ### Method 1: Universal
+
 Clone the repo
-   ```sh
-   git clone https://github.com/silencelen/bybrynn-code
-   ```
+
+```sh
+git clone https://github.com/silencelen/bybrynn-code
+```
+
 ### Method 2: use ./clone command on local server (admin access required)
+
 issue clone script command
-   ```sh
-   ./clone
-   ```
+
+```sh
+./clone
+```
+
 ### Method 3: issue a direct transfer request
+
 Email dev with the specified folder paths and depth.
-   ```js
-   webmaster@silencelen.com
-   ```
+
+```js
+webmaster@silencelen.com
+```
+
 <br/>
 
-
 <!-- ROADMAP -->
+
 ## Roadmap
+
 - [x] Add home page
 - [x] Add about page
 - [x] Add shop page
@@ -90,35 +100,28 @@ Email dev with the specified folder paths and depth.
 - [ ] Add photography page
 - [ ] Add mobile specific version
 - [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+  - [ ] Chinese
+  - [ ] Spanish
 
 See the [open issues](https://github.com/silencelen/bybrynn-code/issues) for a full list of proposed features (and known issues).
 
-
-
-
-
 <!-- LICENSE -->
+
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-
-
-
-
 <!-- CONTACT -->
+
 ## Contact
 
 Webmaster - webmaster@bybrynn.com
 
 Business inquiries: [@bybrynnm] - contact@bybrynn.com
 
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
 [contributors-shield]: https://img.shields.io/github/contributors/silencelen/bybrynn-code.svg?style=for-the-badge
 [contributors-url]: https://github.com/silencelen/bybrynn-code/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/silencelen/bybrynn-code.svg?style=for-the-badge
@@ -147,4 +150,4 @@ Business inquiries: [@bybrynnm] - contact@bybrynn.com
 [Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
+[JQuery-url]: https://jquery.com

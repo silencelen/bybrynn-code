@@ -144,7 +144,8 @@ a {
   color: #337ab7;
   text-decoration: none;
 }
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: #23527c;
   text-decoration: underline;
 }
@@ -208,7 +209,8 @@ hr {
   border: 0;
 }
 
-.sr-only-focusable:active, .sr-only-focusable:focus {
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
   position: static;
   width: auto;
   height: auto;
@@ -221,89 +223,127 @@ hr {
   cursor: pointer;
 }
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
 }
 h1 small,
-h1 .small, h2 small,
-h2 .small, h3 small,
-h3 .small, h4 small,
-h4 .small, h5 small,
-h5 .small, h6 small,
+h1 .small,
+h2 small,
+h2 .small,
+h3 small,
+h3 .small,
+h4 small,
+h4 .small,
+h5 small,
+h5 .small,
+h6 small,
 h6 .small,
 .h1 small,
-.h1 .small, .h2 small,
-.h2 .small, .h3 small,
-.h3 .small, .h4 small,
-.h4 .small, .h5 small,
-.h5 .small, .h6 small,
+.h1 .small,
+.h2 small,
+.h2 .small,
+.h3 small,
+.h3 .small,
+.h4 small,
+.h4 .small,
+.h5 small,
+.h5 .small,
+.h6 small,
 .h6 .small {
   font-weight: normal;
   line-height: 1;
   color: #777777;
 }
 
-h1, .h1,
-h2, .h2,
-h3, .h3 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
   margin-top: 20px;
   margin-bottom: 10px;
 }
 h1 small,
-h1 .small, .h1 small,
+h1 .small,
+.h1 small,
 .h1 .small,
 h2 small,
-h2 .small, .h2 small,
+h2 .small,
+.h2 small,
 .h2 .small,
 h3 small,
-h3 .small, .h3 small,
+h3 .small,
+.h3 small,
 .h3 .small {
   font-size: 65%;
 }
 
-h4, .h4,
-h5, .h5,
-h6, .h6 {
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 h4 small,
-h4 .small, .h4 small,
+h4 .small,
+.h4 small,
 .h4 .small,
 h5 small,
-h5 .small, .h5 small,
+h5 .small,
+.h5 small,
 .h5 .small,
 h6 small,
-h6 .small, .h6 small,
+h6 .small,
+.h6 small,
 .h6 .small {
   font-size: 75%;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 36px;
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: 30px;
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: 24px;
 }
 
-h4, .h4 {
+h4,
+.h4 {
   font-size: 18px;
 }
 
-h5, .h5 {
+h5,
+.h5 {
   font-size: 14px;
 }
 
-h6, .h6 {
+h6,
+.h6 {
   font-size: 12px;
 }
 
@@ -331,7 +371,7 @@ small,
 mark,
 .mark {
   background-color: #fcf8e3;
-  padding: .2em;
+  padding: 0.2em;
 }
 
 .text-left {
@@ -358,7 +398,8 @@ mark,
   text-transform: lowercase;
 }
 
-.text-uppercase, .initialism {
+.text-uppercase,
+.initialism {
   text-transform: uppercase;
 }
 
@@ -516,7 +557,8 @@ dd {
   margin-left: 0;
 }
 
-.dl-horizontal dd:before, .dl-horizontal dd:after {
+.dl-horizontal dd:before,
+.dl-horizontal dd:after {
   content: " ";
   display: table;
 }
@@ -570,7 +612,7 @@ blockquote .small {
 blockquote footer:before,
 blockquote small:before,
 blockquote .small:before {
-  content: '\2014 \00A0';
+  content: "\2014 \00A0";
 }
 
 .blockquote-reverse,
@@ -587,7 +629,7 @@ blockquote.pull-right {
 blockquote.pull-right footer:before,
 blockquote.pull-right small:before,
 blockquote.pull-right .small:before {
-  content: '';
+  content: "";
 }
 .blockquote-reverse footer:after,
 .blockquote-reverse small:after,
@@ -595,7 +637,7 @@ blockquote.pull-right .small:before {
 blockquote.pull-right footer:after,
 blockquote.pull-right small:after,
 blockquote.pull-right .small:after {
-  content: '\00A0 \2014';
+  content: "\00A0 \2014";
 }
 
 address {
@@ -667,7 +709,8 @@ pre code {
   padding-left: 15px;
   padding-right: 15px;
 }
-.container:before, .container:after {
+.container:before,
+.container:after {
   content: " ";
   display: table;
 }
@@ -696,7 +739,8 @@ pre code {
   padding-left: 15px;
   padding-right: 15px;
 }
-.container-fluid:before, .container-fluid:after {
+.container-fluid:before,
+.container-fluid:after {
   content: " ";
   display: table;
 }
