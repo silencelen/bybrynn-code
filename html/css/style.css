@@ -28,6 +28,12 @@ body {
   overflow-x: hidden;
   padding: 1;
 }
+a.fixed {
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-width: 60px;
+}
 body.fh5co-offcanvas {
   overflow: hidden;
 }
@@ -363,7 +369,12 @@ div#fh5co-projects-feed {
     overflow-x: hidden;
     padding: 1;
   }
-
+  a.fixed {
+    position: absolute;
+    right: 0;
+    top: 0;
+    max-width: 171px;
+  }
   img#special2 {
     display: none;
     pointer-events: none;

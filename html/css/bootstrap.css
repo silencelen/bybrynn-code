@@ -147,3 +147,6 @@ input[type="range"] {
   display: block;
   width: 100%;
 }
+.instagram {
+  text-align: right;
+}
