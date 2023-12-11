@@ -23,6 +23,15 @@ a {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
+a:hover {
+  text-decoration: none !important;
+  color: #2c4468 !important;
+}
+a:active,
+a:focus {
+  outline: none;
+}
+
 p,
 ul,
 ol {
