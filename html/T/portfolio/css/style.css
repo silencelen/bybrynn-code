@@ -1,24 +1,20 @@
 @font-face {
-  font-family: 'icomoon';
-  src: url("../fonts/icomoon/icomoon.eot?srf3rx");
-  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   line-height: 1.8;
   font-size: 16px;
   background: url(../images/background.webp), #f6f2ec;
-  background-size:     cover;                      
-  background-repeat:   no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: center center;
   color: #848484;
   font-weight: 300;
   overflow-x: hidden;
   padding: 1;
-
 }
 body.fh5co-offcanvas {
   overflow: hidden;
@@ -34,20 +30,28 @@ a:hover {
   text-decoration: none !important;
   color: #5e8fbb !important;
 }
-a:active, a:focus {
+a:active,
+a:focus {
   outline: none;
 }
 
-p, ul, ol {
+p,
+ul,
+ol {
   margin-bottom: 1.5em;
   font-size: 15px;
   color: #5c5c5c;
-  font-family: 'Libre Baskerville', Arial, serif;
+  font-family: "Libre Baskerville", Arial, serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #212121;
-  font-family: 'Libre Baskerville', Arial, serif;
+  font-family: "Libre Baskerville", Arial, serif;
   font-weight: 400;
   margin: 0 0 20px 0;
 }
@@ -106,7 +110,9 @@ figure {
     padding: 5px;
   }
 }
-#fh5co-header nav ul li a:hover, #fh5co-header nav ul li a:active, #fh5co-header nav ul li a:focus {
+#fh5co-header nav ul li a:hover,
+#fh5co-header nav ul li a:active,
+#fh5co-header nav ul li a:focus {
   color: #000 !important;
   text-decoration: none;
   outline: none;
@@ -116,9 +122,10 @@ figure {
   color: black !important;
 }
 div#fh5co-projects-feed {
-    text-align: center;
+  text-align: center;
 }
-.fh5co-projects-feed, .footer-content {
+.fh5co-projects-feed,
+.footer-content {
   margin: 0 auto;
   max-width: 1320px;
 }
@@ -137,14 +144,12 @@ div#fh5co-projects-feed {
   display: block;
   text-align: center;
 }
-.fh5co-projects-feed .fh5co-project>a img {
+.fh5co-projects-feed .fh5co-project > a img {
+  pointer-events: none;
+  max-width: 100%;
+  width: 100%;
 
-    pointer-events: none;
-    max-width: 100%;
-    width: 100%;
-
-    padding: 7px;
-
+  padding: 7px;
 }
 .fh5co-projects-feed .fh5co-project > a h2 {
   font-size: 14px;
@@ -154,7 +159,9 @@ div#fh5co-projects-feed {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-.fh5co-projects-feed .fh5co-project > a:hover h2, .fh5co-projects-feed .fh5co-project > a:active h2, .fh5co-projects-feed .fh5co-project > a:focus h2 {
+.fh5co-projects-feed .fh5co-project > a:hover h2,
+.fh5co-projects-feed .fh5co-project > a:active h2,
+.fh5co-projects-feed .fh5co-project > a:focus h2 {
   color: #000;
 }
 
@@ -215,7 +222,9 @@ div#fh5co-projects-feed {
 .page-content .meta a {
   color: #5c5c5c;
 }
-.page-content .meta a:hover, .page-content .meta a:active, .page-content .meta a:focus {
+.page-content .meta a:hover,
+.page-content .meta a:active,
+.page-content .meta a:focus {
   color: #000 !important;
 }
 @media screen and (max-width: 480px) {
@@ -237,7 +246,9 @@ div#fh5co-projects-feed {
 #fh5co-footer a {
   color: #5c5c5c;
 }
-#fh5co-footer a:hover, #fh5co-footer a:active, #fh5co-footer a:focus {
+#fh5co-footer a:hover,
+#fh5co-footer a:active,
+#fh5co-footer a:focus {
   color: #000 !important;
 }
 #fh5co-footer .social {
@@ -252,7 +263,9 @@ div#fh5co-projects-feed {
     padding: 5px;
   }
 }
-#fh5co-footer .social a:hover, #fh5co-footer .social a:active, #fh5co-footer .social a:focus {
+#fh5co-footer .social a:hover,
+#fh5co-footer .social a:active,
+#fh5co-footer .social a:focus {
   color: #000 !important;
 }
 
@@ -281,65 +294,51 @@ div#fh5co-projects-feed {
 #fh5co-projects-feed {
   text-align: center;
 }
-.fh5co-projects-feed .fh5co-project>a img {
-
+.fh5co-projects-feed .fh5co-project > a img {
   pointer-events: none;
   max-width: 100%;
   width: 100%;
   padding: 7px;
 }
-@media(max-width:480px){
+@media (max-width: 480px) {
   .masonry .masonry-brick {
-      position: static!important;
+    position: static !important;
   }
-  .fh5co-projects-feed .fh5co-project>a img {
-      margin-bottom: 0px;
+  .fh5co-projects-feed .fh5co-project > a img {
+    margin-bottom: 0px;
   }
 }
 
 #special img {
-	padding: 20px;
+  padding: 20px;
 }
 
-@media (max-width:1019px) {
-	img#special {
-		display: none;
-		padding: 20px;
-	}
+@media (max-width: 1019px) {
+  img#special {
+    display: none;
+    padding: 20px;
+  }
 }
-@media (min-width:1020px) {
-	img#special2 {
-		display: none;
-	}
+@media (min-width: 1020px) {
+  img#special2 {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
-@media (max-width: 1370px){
-    #fh5co-projects-feed{
-        max-width: 990px !important;
-        margin: auto;
-    }
+@media (max-width: 1370px) {
+  #fh5co-projects-feed {
+    max-width: 990px !important;
+    margin: auto;
+  }
 }
-@media (max-width: 1349px){
-    #fh5co-projects-feed{
-        max-width: 990px !important;
-        margin: auto;
-    }
+@media (max-width: 1349px) {
+  #fh5co-projects-feed {
+    max-width: 990px !important;
+    margin: auto;
+  }
 }
-@media (max-width: 1019px){
-    #fh5co-projects-feed div{
-        position: unset !important;
-    }
+@media (max-width: 1019px) {
+  #fh5co-projects-feed div {
+    position: unset !important;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
