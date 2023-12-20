@@ -32,7 +32,7 @@ a {
 }
 a:hover {
   text-decoration: none !important;
-  color: #2da9d7 !important;
+  color: #5e8fbb !important;
 }
 a:active, a:focus {
   outline: none;
@@ -58,17 +58,17 @@ figure {
 
 ::-webkit-selection {
   color: #fcfcfc;
-  background: #2da9d7;
+  background: #5e8fbb;
 }
 
 ::-moz-selection {
   color: #fcfcfc;
-  background: #2da9d7;
+  background: #5e8fbb;
 }
 
 ::selection {
   color: #fcfcfc;
-  background: #2da9d7;
+  background: #5e8fbb;
 }
 
 #fh5co-header {

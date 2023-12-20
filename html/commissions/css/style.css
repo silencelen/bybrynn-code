@@ -12,14 +12,14 @@ body {
   padding: 1;
 }
 a {
-  color: #2da9d7;
+  color: #5e8fbb;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover {
   text-decoration: none !important;
-  color: #2da9d7 !important;
+  color: #5e8fbb !important;
 }
 a:active,
 a:focus {
@@ -48,7 +48,7 @@ h6 {
 }
 ::selection {
   color: #fcfcfc;
-  background: #2da9d7;
+  background: #5e8fbb;
 }
 
 #fh5co-header {
