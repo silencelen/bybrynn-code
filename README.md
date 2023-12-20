@@ -96,7 +96,7 @@ webmaster@silencelen.com
 - [x] Add portfolio page
 - [x] Add art page
 - [x] Add single pages
-- [ ] Add photography page
+- [x] Add photography page
 - [ ] Add mobile specific version
 - [ ] Multi-language Support
   - [ ] Chinese
