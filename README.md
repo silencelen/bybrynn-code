@@ -108,7 +108,7 @@ See the [open issues](https://github.com/silencelen/bybrynn-code/issues) for a f
 
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under no license, © 2023 - Brynn Monahan - All Rights Reserved.
 
 <!-- CONTACT -->
 
