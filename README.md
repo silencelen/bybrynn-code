@@ -27,7 +27,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/silencelen/bybrynn-code">
-    <img src="html/images/logow.webp" alt="Logo" width="80" height="80">
+    <img src="images/logow.webp" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Bybrynn-code</h3>
