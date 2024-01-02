@@ -309,7 +309,7 @@ div#fh5co-projects-feed {
     margin: auto;
   }
 }
-@media (max-width: 1019px) {
+@media (max-width: 1036px) {
   #fh5co-projects-feed {
     height: auto !important;
   }
