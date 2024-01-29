@@ -57,7 +57,7 @@ h6 {
   margin-bottom: 30px;
 }
 #fh5co-header nav {
-  padding-top: 20px;
+  padding-top: 0px;
 }
 #fh5co-header nav ul {
   padding: 0;
@@ -95,7 +95,7 @@ h6 {
 #fh5co-footer a {
   color: #5c5c5c;
 }
-@media (max-width: 1199px) {
+@media (max-width: 653px) {
   body {
     font-family: libre baskerville, serif;
     line-height: 1.8;
@@ -103,8 +103,8 @@ h6 {
     height: 100%;
     background: url(../images/background.webp), #f4efe9;
     background-size: cover;
-    background-repeat: repeat;
-    background-position: center top;
+    background-repeat: no-repeat;
+    background-position: center 80px;
     color: #848484;
     font-weight: 300;
     overflow-x: hidden;
@@ -124,7 +124,47 @@ h6 {
     color: #212121;
     font-family: libre baskerville, Arial, serif;
     font-weight: 400;
-    margin: 50px 0 20px;
+    margin: 0px 0 0px;
+  }
+  img#special {
+    display: none;
+    pointer-events: none;
+  }
+  img#special2 {
+    max-width: 50%;
+    pointer-events: none;
+  }
+}
+@media (min-width: 654px) {
+  body {
+    font-family: libre baskerville, serif;
+    line-height: 1.8;
+    font-size: 16px;
+    height: 100%;
+    background: url(../images/squarebackground.webp), #f4efe9;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 90px;
+    color: #848484;
+    font-weight: 300;
+    overflow-x: hidden;
+    padding: 1;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #212121;
+    font-family: libre baskerville, Arial, serif;
+    font-weight: 400;
+    margin: 0px 0 0px;
   }
   img#special {
     display: none;
@@ -142,7 +182,7 @@ h6 {
     line-height: 1.8;
     font-size: 16px;
     height: 100%;
-    background: url(../images/testbackground.webp), #f4efe9;
+    background: url(../images/widebackground.webp), #f4efe9;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center 80px;
@@ -151,19 +191,28 @@ h6 {
     overflow-x: hidden;
     padding: 1;
   }
-  a.fixed {
-    position: absolute;
-    right: 0;
-    top: 0;
-    max-width: 171px;
+
+  img {
+    max-width: 100%;
   }
-  img#special2 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #212121;
+    font-family: libre baskerville, Arial, serif;
+    font-weight: 400;
+    margin: 0px 0 0px;
+  }
+  img#special {
     display: none;
     pointer-events: none;
   }
-
-  img {
-    max-width: 35%;
+  img#special2 {
+    max-width: 50%;
     pointer-events: none;
   }
 }
