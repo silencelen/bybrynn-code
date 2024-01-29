@@ -90,7 +90,8 @@ h6 {
   padding-bottom: 20px;
   text-align: center;
   color: #999;
-  position: abosolute;
+  position: fixed;
+  bottom: 0px;
 }
 #fh5co-footer a {
   color: #5c5c5c;
@@ -167,11 +168,11 @@ h6 {
     margin: 0px 0 0px;
   }
   img#special {
-    display: none;
+    max-width: 50%;
     pointer-events: none;
   }
   img#special2 {
-    max-width: 50%;
+    display: none;
     pointer-events: none;
   }
 }
