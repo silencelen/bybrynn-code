@@ -96,16 +96,16 @@ h6 {
 #fh5co-footer a {
   color: #5c5c5c;
 }
-@media (max-width: 653px) {
+@media (max-width: 468px) {
   body {
     font-family: libre baskerville, serif;
     line-height: 1.8;
     font-size: 16px;
     height: 100%;
-    background: url(../images/background.webp), #f4efe9;
+    background: url(../images/longbackground.webp), #f4efe9;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center 80px;
+    background-position: center 150px;
     color: #848484;
     font-weight: 300;
     overflow-x: hidden;
@@ -127,13 +127,37 @@ h6 {
     font-weight: 400;
     margin: 0px 0 0px;
   }
-  img#special {
-    display: none;
-    pointer-events: none;
+}
+@media (min-width: 469px) {
+  body {
+    font-family: libre baskerville, serif;
+    line-height: 1.8;
+    font-size: 16px;
+    height: 100%;
+    background: url(../images/longbackground.webp), #f4efe9;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 100px;
+    color: #848484;
+    font-weight: 300;
+    overflow-x: hidden;
+    padding: 1;
   }
-  img#special2 {
-    max-width: 50%;
-    pointer-events: none;
+
+  img {
+    max-width: 100%;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #212121;
+    font-family: libre baskerville, Arial, serif;
+    font-weight: 400;
+    margin: 0px 0 0px;
   }
 }
 @media (min-width: 654px) {
@@ -167,14 +191,6 @@ h6 {
     font-weight: 400;
     margin: 0px 0 0px;
   }
-  img#special {
-    max-width: 50%;
-    pointer-events: none;
-  }
-  img#special2 {
-    display: none;
-    pointer-events: none;
-  }
 }
 
 @media (min-width: 1200px) {
@@ -207,13 +223,5 @@ h6 {
     font-family: libre baskerville, Arial, serif;
     font-weight: 400;
     margin: 0px 0 0px;
-  }
-  img#special {
-    display: none;
-    pointer-events: none;
-  }
-  img#special2 {
-    max-width: 50%;
-    pointer-events: none;
   }
 }
