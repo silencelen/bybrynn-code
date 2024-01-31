@@ -29,7 +29,6 @@
 </head>
 
 <body>
-
     <header id=fh5co-header role=banner>
         <div class="container text-center">
             <div id=fh5co-logo><a href= /><img src=images/logo.webp alt="Bybrynn"></a></div>
@@ -43,7 +42,6 @@
                 <ul>
                     <li class=active><a href=/portfolio/art>art.</a></li>
                     <li><a href=/portfolio/photography>photography.</a></li>
-
                 </ul>
             </nav>
         </div>
@@ -53,209 +51,235 @@
     <center>
         <h1 class=mb0>Art</h1>
     </center>
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid pt70 pb70">
-        <div id=fh5co-projects-feed class="fh5co-projects-feed clearfix masonry">
-            <div class="fh5co-project masonry-brick">
+        <div class="container">
+            <div class="sorting">
+                <h6 style="font-size: 25px;" onclick="toggleDropdown()">
+                    <ion-icon name="filter-outline"></ion-icon>
+                    <span style="font-size: 15px; position: relative; top: -10px;">Sort By:
+                    </span>
+                </h6>
+                <span id="selectedOption" onclick="resetSorting()">
+                </span>
+                <div id="sortingDropdown" class="dropdown-content">
+                    <div class="sorting-content">
+                        <span onclick="sortBy('Name')">Name</span>
+                        <span onclick="sortBy('Newest')">Newest</span>
+                        <span onclick="sortBy('Oldest')">Oldest</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id=fh5co-projects-feed class="fh5co-projects-feed clearfix masonry gallery">
+            <div class="fh5co-project masonry-brick" data-date="2020">
                 <a href=lookwhatyoumademedo>
                     <img src="images/lookwhatyoumademedo.webp" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick 1" data-date="2020">
                 <a href=harrysteyeles>
                     <img src="images/harrysteyeles.webp" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick 2" data-date="2021">
                 <a href=ophelia>
                     <img src="images/ophelia.webp" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick 3" data-date="2021">
                 <a href=inthegallery>
                     <img src="images/inthegallery.webp" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2021">
                 <a href=bentley&penelope>
                     <img src="images/bentley&penelope.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2021">
                 <a href=deborainthelaundromat>
                     <img src="images/deborainthelaundromat.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2021">
                 <a href=yelena>
                     <img src="images/yelena.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2021">
                 <a href=invisiblestring>
                     <img src="images/invisiblestring.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick 5" data-date="2021">
                 <a href=billiex2>
                     <img src="images/billiex2.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick 5" data-date="2021">
                 <a href=littlewomenbyjomarch>
                     <img src="images/littlewomenbyjomarch.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick 5" data-date="2020">
                 <a href=orlainorange>
                     <img src="images/orlainorange.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick 6" data-date="2020">
                 <a href=chadwickbozeman>
                     <img src="images/chadwickbozeman.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2022">
                 <a href=spideyx3>
                     <img src="images/spideyx3.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick 6" data-date="2022">
                 <a href=holdmyhand>
                     <img src="images/holdmyhand.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2020">
                 <a href=thisiswhatitfeelslike>
                     <img src="images/thisiswhatitfeelslike.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2022">
                 <a href=letlightbelight>
                     <img src="images/letlightbelight.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2022">
                 <a href=slotcanyonnv>
                     <img src="images/slotcanyonnv.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2022">
                 <a href=ella>
                     <img src="images/ella.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2022">
                 <a href=mady&jonathan>
                     <img src="images/mady&jonathan.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2022">
                 <a href=coolgirl>
                     <img src="images/coolgirl.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2022">
                 <a href=apromiseofhopeisenoughtofeelfree>
                     <img src="images/apromiseofhopeisenoughtofeelfree.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2020">
                 <a href=grogu>
                     <img src="images/grogu.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2022">
                 <a href=latenightsocking>
                     <img src="images/latenightsocking.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2022">
                 <a href=midnights>
                     <img src="images/midnights.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2022">
                 <a href=myheart&mylungs>
                     <img src="images/mylungs.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2022">
                 <a href=myheart&mylungs>
                     <img src="images/myheart.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2023">
                 <a href=heartinmyhands>
                     <img src="images/heartinmyhands.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2023">
                 <a href=labyrinth>
                     <img src="images/labyrinth.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2023">
                 <a href=jess&gabriel>
                     <img src="images/jess&gabriel.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2023">
                 <a href=getyourheadouttheground>
                     <img src="images/getyourheadouttheground.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2020">
                 <a href=pluto>
                     <img src="images/pluto.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2022">
                 <a href=kitschycatclock>
                     <img src="images/kitschycatclock.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2020">
                 <a href=jo&laurie>
                     <img src="images/jo&laurie.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2020">
                 <a href=walkonthebeach>
                     <img src="images/walkonthebeach.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2020">
                 <a href=aquietlife>
                     <img src="images/aquietlife.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2020">
                 <a href=beforethekiss>
                     <img src="images/beforethekiss.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2021">
                 <a href=conan>
                     <img src="images/conan.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2021">
                 <a href=aconcertsixmonthsfromnow>
                     <img src="images/aconcertsixmonthsfromnow.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2020">
                 <a href=makenna>
                     <img src="images/makenna.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2023">
                 <a href=pinkyswear>
                     <img src="images/pinkyswear.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2023">
                 <a href=snowonthebeach>
                     <img src="images/snowonthebeach.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2023">
                 <a href=gracie>
                     <img src="images/gracie.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2023">
                 <a href=imamirrorball>
                     <img src="images/imamirrorball.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2023">
                 <a href=mirrorball>
                     <img src="images/mirrorball.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2023">
                 <a href=shiningjustforyou>
                     <img src="images/shiningjustforyou.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2023">
                 <a href=maisie>
                     <img src="images/maisie.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2023">
                 <a href=withtheflowers>
                     <img src="images/withtheflowers.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2023">
                 <a href=growntogether>
                     <img src="images/growntogether.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2023">
                 <a href=backstabbed>
                     <img src="images/backstabbed.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2024">
                 <a href=felinefamilyportrait>
                     <img src="images/felinefamilyportrait.webp" loading="lazy" alt></a>
             </div>
-            <div class="fh5co-project masonry-brick">
+            <div class="fh5co-project masonry-brick" data-date="2023">
                 <a href=rosehillcottage>
                     <img src="images/rosehillcottage.webp" loading="lazy" alt></a>
             </div>
@@ -273,6 +297,10 @@
     <script src=js/bootstrap.min.js></script>
     <script src=js/jquery.masonry.min.js></script>
     <script src=js/main.js></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Include Isotope library -->
+    <script src="https://cdn.jsdelivr.net/isotope/3.0.6/isotope.pkgd.min.js"></script>
 </body>
 
 </html>
