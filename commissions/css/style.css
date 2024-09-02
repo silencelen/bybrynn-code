@@ -255,3 +255,63 @@ div#fh5co-projects-feed {
     position: unset !important;
   }
 }
+/* Dropdown Menu Styles */
+#fh5co-header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#fh5co-header nav ul li {
+  position: relative;
+  display: inline-block; /* Ensures inline display with dropdown capability */
+}
+
+#fh5co-header nav ul li a {
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  color: #5c5c5c !important;
+}
+
+#fh5co-header nav ul li .dropdown-menu {
+  display: none; /* Hidden by default */
+  position: absolute;
+  left: 0;
+  background-color: white; /* Background color for dropdown items */
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  z-index: 1000; /* Ensure it stays on top */
+  opacity: 90%;
+}
+
+#fh5co-header nav ul li .dropdown-menu li {
+  display: block; /* Block display for dropdown items */
+}
+
+#fh5co-header nav ul li .dropdown-menu li a {
+  padding: 10px 20px;
+  white-space: nowrap; /* Prevent text from wrapping */
+  color: #5c5c5c !important;
+}
+
+#fh5co-header nav ul li:hover .dropdown-menu {
+  display: block; /* Show dropdown on hover */
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  #fh5co-header nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #fh5co-header nav ul li {
+    display: block; /* Full width for mobile view */
+  }
+
+  #fh5co-header nav ul li .dropdown-menu {
+    position: static; /* Remove absolute positioning on mobile */
+  }
+}
