@@ -2,7 +2,6 @@ body {
   font-family: "Libre Baskerville", serif;
   line-height: 1.8;
   font-size: 16px;
-  min-height: 5000px;
   background: url(../images/background.webp), #f6f2ec;
   background-size: cover;
   background-repeat: no-repeat;
