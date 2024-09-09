@@ -17,14 +17,14 @@ body.fh5co-offcanvas {
 }
 
 a {
-  color: #5e8fbb;
+  color: #8c8c8d;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover {
   text-decoration: none !important;
-  color: #5e8fbb !important;
+  color: #8c8c8d !important;
 }
 a:active,
 a:focus {
@@ -374,7 +374,7 @@ div#fh5co-projects-feed {
 #selectedOption ion-icon {
   position: relative;
   top: 5px;
-  color: #0869d7;
+  color: #8c8c8d;
   font-size: 20px;
   font-weight: bold;
   left: 10px;
