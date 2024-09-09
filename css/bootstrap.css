@@ -124,7 +124,7 @@ ol {
     width: 970px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width : 1240px ){
   .container {
     width: 1170px;
   }
