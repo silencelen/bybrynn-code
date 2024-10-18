@@ -21,6 +21,11 @@ body.fh5co-offcanvas {
   overflow: hidden;
 }
 
+#fh5co-logo a {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 a {
   color: #5e8fbb;
   -webkit-transition: 0.5s;
