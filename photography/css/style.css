@@ -14,7 +14,7 @@ h2::after {
   margin-top: 10px; /* Adjust spacing between the h2 text and the underline */
   height: 2px; /* Thickness of the underline */
   width: 50vw; /* Makes the underline 70% of the viewport width */
-  background-color: #666666b0; /* Color of the underline */
+  background-color: #acacac; /* Color of the underline */
   position: relative;
   left: 0; /* Keeps the underline starting from the left of the h2 */
 }
