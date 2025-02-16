@@ -52,12 +52,16 @@
         <div class="container-fluid">
             <div class="footer-content">
                 <div class="copyright">
-                    <small>&copy; 2024 - Brynn Monahan - All Rights Reserved.</small></br>
+                    <small>&copy; <span id="year"></span> - Brynn Monahan - All Rights Reserved.</small></br>
                     <a href="mailto:contact@bybrynn.com">Contact me</a>
                 </div>
             </div>
         </div>
-    </footer>
+        </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
     <script src="js/jquery.min.js" defer></script>
     <script src="js/bootstrap.min.js" defer></script>
     <script src="js/jquery.masonry.min.js" defer></script>
