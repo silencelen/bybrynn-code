@@ -1,0 +1,26 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const params = new URLSearchParams(window.location.search);
+  const artId = params.get("art");
+
+  if (!artId) return;
+
+  fetch("/art/entries.json")
+    .then(response => response.json())
+    .then(data => {
+      const entry = data[artId];
+      if (!entry) return;
+
+      document.title = entry.metaTitle;
+      document.getElementById("meta-title").textContent = entry.metaTitle;
+      document.getElementById("meta-desc").setAttribute("content", entry.description);
+      document.getElementById("meta-onion").setAttribute("content", entry.onion);
+
+      document.getElementById("art-title").textContent = entry.title;
+      document.getElementById("art-subheading").innerHTML = `<a href="#">${entry.subheading}</a>`;
+      document.getElementById("art-image").src = entry.image;
+      document.getElementById("art-description").textContent = entry.description;
+
+      document.getElementById("prev-link").href = `/art/page.html?art=${entry.prev}`;
+      document.getElementById("next-link").href = `/art/page.html?art=${entry.next}`;
+    });
+});
