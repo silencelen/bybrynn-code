@@ -1,35 +1,3 @@
-
-
-// (function ($) {
-//     "use strict";
-
-//     $(window).load(function () {
-//         var $container = $('#fh5co-projects-feed'),
-//             containerWidth = $container.outerWidth();
-
-//         $container.masonry({
-//             itemSelector: '.fh5co-project',
-//             columnWidth: function (containerWidth) {
-//                 if (containerWidth <= 330) {
-//                     return 310;
-//                 } else {
-//                     return 330;
-//                 }
-//             },
-
-//             isAnimated: !Modernizr.csstransitions
-
-//         });
-
-
-
-//     });
-   
-// })(window.jQuery);
-
-
-
-
 var dropdownVisible = false;
 let isSelectedSort = false;
 var selectedOptionElement = document.getElementById("selectedOption");
@@ -48,7 +16,6 @@ function toggleDropdown() {
 
 function sortBy(option) {
 
-    // Update the isSelectedSort option display
     isSelectedSort = true;
     selectedOptionElement.style.display = "";
 
@@ -58,10 +25,8 @@ function sortBy(option) {
 
 
 
-    // Shuffle animation class
     const shuffleAnimationClass = "shuffle-animation";
 
-    // Sorting based on the selected option
     if (option == "Newest") {
         projectElements.sort((a, b) => {
             const dateA = new Date(a.getAttribute("data-date"));
@@ -82,22 +47,17 @@ function sortBy(option) {
         });
     }
 
-    // Close the dropdown after selecting an option
     toggleDropdown();
 
-    // Apply shuffle animation class
     projectsFeed.classList.add(shuffleAnimationClass);
 
-    // Remove existing elements from the DOM after a short delay
     setTimeout(() => {
         projectElements.forEach((project) => {
             projectsFeed.removeChild(project);
         });
 
-        // Remove shuffle animation class
         projectsFeed.classList.remove(shuffleAnimationClass);
 
-        // Append the sorted elements back to the DOM
         projectElements.forEach((projectElement) => {
             projectsFeed.appendChild(projectElement);
         });
@@ -105,40 +65,27 @@ function sortBy(option) {
 
 
 
-    }, 500); // Adjust the delay as needed
+    }, 500);
 }
-
-
-// const resetSorting = () => {
-// 	if (isSelectedSort) {
-// 		selectedOptionElement.style.display = "none";
-// 		isSelectedSort = false;
-// 	}
-// }
 const resetSorting = () => {
     if (isSelectedSort) {
-        // Remove sorting animation class
         projectsFeed.classList.remove("shuffle-animation");
 
-        // Remove existing elements from the DOM after a short delay
         setTimeout(() => {
             projectElements.forEach((project) => {
                 projectsFeed.removeChild(project);
             });
 
-            // Append the original order of elements back to the DOM
             originalOrder.forEach((projectElement) => {
                 projectsFeed.appendChild(projectElement);
             });
 
-            // Hide the sorting display
             selectedOptionElement.style.display = "none";
             isSelectedSort = false;
-        }, 500); // Adjust the delay as needed
+        }, 500);
     }
 }
 
-// Save the original order of elements before any sorting
 const originalOrder = Array.from(projectElements);
 
 
