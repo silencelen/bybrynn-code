@@ -346,17 +346,52 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <h1>Submissions Portal</h1>
     </br></br>
 
-    <form method="post" enctype="multipart/form-data">
-        <div class="inputbox">        Title of the Artwork:   <input type="text" name="title" placeholder="Exactly as it will appear" required><br></div>
-        <div class="inputbox">        Medium:   <input type="text" name="medium" placeholder="Medium" required><br></div>
-        <div class="inputbox">        Dimensions:   <input type="text" name="dimensions" placeholder="Dimensions" required><br></div>
-        <div class="inputbox">        Year Finished:   <input type="text" name="year" placeholder="20xx" required><br></div>
-        <div class="inputbox">        Artwork description:   <textarea name="description" placeholder="Accompanying Information below images"></textarea><br></div>
-        <div class="inputbox">        Current Date:   <input type="date" name="date" value="<?php echo date('Y-m-d'); ?>"><br></div>
-        <div class="inputbox"><label> Thumbnail (.webp): <input type="file" name="thumbnail" accept="image/webp" required></label><br></div>
-        <div class="inputbox"><label> High-res (.webp): <input type="file" name="highres" accept="image/webp"></label><br></div>
-        <div class="inputbox"><button type="submit">Add Entry</button></div>    
-    </form>
+<form class="art-form" method="post" enctype="multipart/form-data">
+  <div class="inputbox">
+    <span class="label-text">Title of the Artwork:</span>
+    <input type="text" name="title" placeholder="Exactly as it will appear" required>
+  </div>
+
+  <div class="inputbox">
+    <span class="label-text">Medium:</span>
+    <input type="text" name="medium" placeholder="Watercolor, pencil, etc" required>
+  </div>
+
+  <div class="inputbox">
+    <span class="label-text">Dimensions:</span>
+    <input type="text" name="dimensions" placeholder="'10x12in'" required>
+  </div>
+
+  <div class="inputbox">
+    <span class="label-text">Year Finished:</span>
+    <input type="text" name="year" placeholder="'20xx'" required>
+  </div>
+
+  <div class="inputbox">
+    <span class="label-text">Artwork description:</span>
+    <textarea name="description" placeholder="Accompanying Information below images"></textarea>
+  </div>
+
+  <div class="inputbox">
+    <span class="label-text">Current Date:</span>
+    <input type="date" name="date" value="<?php echo date('Y-m-d'); ?>">
+  </div>
+
+  <div class="inputbox">
+    <span class="label-text">Thumbnail (.webp):</span>
+    <input type="file" name="thumbnail" accept="image/webp" required>
+  </div>
+
+  <div class="inputbox">
+    <span class="label-text">High-res (.webp):</span>
+    <input type="file" name="highres" accept="image/webp">
+  </div>
+
+  <div class="inputbox submitbox">
+    <button type="submit">Add Entry</button>
+  </div>
+</form>
+
     </center>
 </body>
 </html>
