@@ -1,4 +1,4 @@
-/* General Styles */
+﻿
 body {
   font-family: libre baskerville, serif;
   line-height: 1.8;
@@ -56,7 +56,7 @@ h6 {
   margin: 0 0 20px;
 }
 
-/* Header Styles */
+
 #fh5co-header {
   padding-top: 25px;
   margin-bottom: 30px;
@@ -87,7 +87,6 @@ h6 {
   text-decoration: none;
 }
 
-/* Footer Styles */
 .fh5co-projects-feed,
 .footer-content {
   margin: 0 auto;
@@ -102,7 +101,7 @@ h6 {
   color: #494949;
   position: fixed;
   bottom: 0;
-  background-color: #f6f2ec; /* Ensure footer background color matches the page */
+  background-color: #f6f2ec;
   opacity: 75%;
 }
 
@@ -110,7 +109,6 @@ h6 {
   color: #5c5c5c;
 }
 
-/* Dropdown Menu Styles */
 #fh5co-header nav ul {
   list-style-type: none;
   padding: 0;
@@ -156,7 +154,7 @@ h6 {
   display: block;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 468px) {
   body {
     font-family: libre baskerville, serif;
@@ -332,3 +330,4 @@ h6 {
     padding: 1;
   }
 }
+

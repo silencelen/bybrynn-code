@@ -3,7 +3,7 @@ body {
   line-height: 1.8;
   font-size: 16px;
   background: url(/images/background.webp), #f6f2ec;
-   background-size: 100% auto;
+  background-size: 100% auto;
   background-repeat: repeat-y;
   background-position: top center;
   color: #848484;
@@ -55,23 +55,21 @@ h6 {
   background: #5e8fbb;
 }
 
-/* Updated to switch between #special and #special2 based on screen size */
 #special {
-  display: block;  /* Show on larger screens */
+  display: block;
 }
 
 #special2 {
-  display: none;   /* Hide on larger screens */
+  display: none;
 }
 
-/* Switch behavior for smaller screens */
 @media (max-width: 1020px) {
   #special {
-    display: none;  /* Hide on smaller screens */
+    display: none;
   }
-  
+
   #special2 {
-    display: block;  /* Show on smaller screens */
+    display: block;
   }
 }
 
@@ -126,7 +124,6 @@ h6 {
   color: black !important;
 }
 
-/* Dropdown menu styling */
 #fh5co-header nav ul li .dropdown-menu {
   display: none;
   position: absolute;
@@ -281,17 +278,18 @@ div#fh5co-projects-feed {
 @media screen and (max-width: 480px) {
   .pb70 {
     padding-bottom: 30px;
-}
+  }
 
-#fh5co-projects-feed {
-  text-align: center;
-}
+  #fh5co-projects-feed {
+    text-align: center;
+  }
 
-.fh5co-projects-feed .fh5co-project > a img {
-  pointer-events: none;
-  max-width: 100%;
-  width: 100%;
-  padding: 7px;
+  .fh5co-projects-feed .fh5co-project > a img {
+    pointer-events: none;
+    max-width: 100%;
+    width: 100%;
+    padding: 7px;
+  }
 }
 
 @media (max-width: 480px) {

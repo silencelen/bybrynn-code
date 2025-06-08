@@ -8,7 +8,7 @@ body {
   line-height: 1.8;
   font-size: 16px;
   background: url(/images/background.webp), #f6f2ec;
-    background-size: 100% auto;
+  background-size: 100% auto;
   background-repeat: repeat-y;
   background-position: top center;
   color: #848484;
@@ -21,10 +21,14 @@ body.fh5co-offcanvas {
   overflow: hidden;
 }
 
-#fh5co-logo a {  padding-top: 25px;  padding-bottom: 40px;
+#fh5co-logo a {
+  padding-top: 25px;
+  padding-bottom: 40px;
 }
 
-#fh5co-logo a {  padding-top: 25px;  padding-bottom: 40px;
+#fh5co-logo a {
+  padding-top: 25px;
+  padding-bottom: 40px;
 }
 
 a {
@@ -130,34 +134,33 @@ figure {
   color: black !important;
 }
 
-/* Dropdown menu styling */
 #fh5co-header nav ul li .dropdown-menu {
-  display: none; /* Initially hidden */
-  position: absolute; /* Dropdown will not affect other items */
-  top: 100%; /* Aligns just below the parent item */
-  left: 50%; /* Align the dropdown to 50% of the parent width */
-  transform: translateX(-50%); /* Shift the dropdown to be centered */
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: white;
-  z-index: 1000; /* Ensure dropdown appears above other content */
+  z-index: 1000;
   padding: 0;
   margin: 0;
   list-style-type: none;
   opacity: 90%;
-  width: max-content; /* Ensure width fits the content */
+  width: max-content;
 }
 
 #fh5co-header nav ul li .dropdown-menu li {
-  display: block; /* Block display for dropdown items */
+  display: block;
 }
 
 #fh5co-header nav ul li .dropdown-menu li a {
   padding: 10px 20px;
-  white-space: nowrap; /* Prevent text wrapping */
+  white-space: nowrap;
   color: #5c5c5c !important;
 }
 
 #fh5co-header nav ul li:hover .dropdown-menu {
-  display: block; /* Show dropdown on hover */
+  display: block;
 }
 
 div#fh5co-projects-feed {
@@ -335,56 +338,59 @@ div#fh5co-projects-feed {
 @media screen and (max-width: 480px) {
   .pb70 {
     padding-bottom: 30px;
-}
-#fh5co-projects-feed {
-  text-align: center;
-}
-.fh5co-projects-feed .fh5co-project > a img {
-  pointer-events: none;
-  max-width: 100%;
-  width: 100%;
-  padding: 7px;
-}
-@media (max-width: 690px) {
-  .masonry .masonry-brick {
-    position: static !important;
+  }
+  #fh5co-projects-feed {
+    text-align: center;
   }
   .fh5co-projects-feed .fh5co-project > a img {
-    margin-bottom: 0px;
+    pointer-events: none;
+    max-width: 100%;
+    width: 100%;
+    padding: 7px;
   }
-}
-/*# sourceMappingURL=style.css.map */
-@media (max-width: 1370px) {
-  #fh5co-projects-feed {
-    max-width: 990px !important;
-    margin: auto;
-  }
-}
-@media (max-width: 1349px) {
-  #fh5co-projects-feed {
-    max-width: 990px !important;
-    margin: auto;
-  }
-}
-@media (max-width: 1036px) {
-  #fh5co-projects-feed div {
-    position: unset !important;
-  }
-}
-/* Media Queries for Mobile Devices */
-@media (max-width: 768px) {
-  #fh5co-header nav ul {
-    text-align: center;
-    display: inline-block; /* Maintain inline-block layout for mobile */
+  @media (max-width: 690px) {
+    .masonry .masonry-brick {
+      position: static !important;
+    }
+    .fh5co-projects-feed .fh5co-project > a img {
+      margin-bottom: 0px;
+    }
   }
 
-  #fh5co-header nav ul li {
-    display: inline-block; /* Ensure inline display on mobile */
-    margin: 0 10px;
+  @media (max-width: 1370px) {
+    #fh5co-projects-feed {
+      max-width: 990px !important;
+      margin: auto;
+    }
+  }
+  @media (max-width: 1349px) {
+    #fh5co-projects-feed {
+      max-width: 990px !important;
+      margin: auto;
+    }
+  }
+  @media (max-width: 1036px) {
+    #fh5co-projects-feed div {
+      position: unset !important;
+    }
   }
 
-  #fh5co-header nav ul li .dropdown-menu {
-    position: absolute; /* Ensure dropdown remains positioned properly */
-    top: 100%; /* Dropdown appears just below the parent */
-    left: 50%; /* Align to center */
-    transform: translateX(-50%);
+  @media (max-width: 768px) {
+    #fh5co-header nav ul {
+      text-align: center;
+      display: inline-block;
+    }
+
+    #fh5co-header nav ul li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    #fh5co-header nav ul li .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}

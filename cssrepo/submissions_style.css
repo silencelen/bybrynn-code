@@ -1,43 +1,36 @@
-/* 1) Center the whole form and give it some breathing room */
-.art-form {
-  max-width: 600px; /* or whatever width you prefer */
-  margin: 2rem auto; /* vertically 2rem, horizontally auto-center */
+﻿.art-form {
+  max-width: 600px;
+  margin: 2rem auto;
   padding: 1rem;
   box-sizing: border-box;
 }
 
-/* 2) Make each row a flex container */
 .inputbox {
   display: flex;
-  justify-content: space-between; /* prefix left, control right */
-  align-items: center; /* vertical centering */
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 1rem;
 }
 
-/* 3) Label text sits on the left */
 .label-text {
-  flex: 1; /* take up remaining space if needed */
+  flex: 1;
   text-align: left;
 }
 
-/* 4) Form controls hug their content and get pushed right */
 .inputbox input,
 .inputbox textarea {
-  flex: 0 0 auto; /* only as big as their intrinsic size */
-  margin-left: 1rem; /* a little gap */
+  flex: 0 0 auto;
+  margin-left: 1rem;
 }
 
-/* 5) Stretch textarea a bit if you like */
 .inputbox textarea {
-  width: 60%; /* tweak as you see fit */
+  width: 60%;
 }
 
-/* 6) Center your submit button row */
 .submitbox {
   justify-content: center;
 }
 
-/* 7) Optionally make button sit nicely */
 .submitbox button {
   padding: 0.5rem 1rem;
   font-size: 1rem;

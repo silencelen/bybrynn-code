@@ -1,13 +1,17 @@
 @font-face {
-  font-family: 'icomoon';
+  font-family: "icomoon";
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
-  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix")
+      format("embedded-opentype"),
+    url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"),
+    url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"),
+    url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-  font-family: 'Libre Baskerville', serif;
+  font-family: "Libre Baskerville", serif;
   line-height: 1.8;
   font-size: 16px;
   background: url(/images/background.webp), #f6f2ec;
@@ -18,13 +22,14 @@ body {
   font-weight: 300;
   overflow-x: hidden;
   padding: 1;
-
 }
 body.fh5co-offcanvas {
   overflow: hidden;
 }
 
-#fh5co-logo a {  padding-top: 25px;  padding-bottom: 40px;
+#fh5co-logo a {
+  padding-top: 25px;
+  padding-bottom: 40px;
 }
 
 a {
@@ -37,20 +42,28 @@ a:hover {
   text-decoration: none !important;
   color: #5e8fbb !important;
 }
-a:active, a:focus {
+a:active,
+a:focus {
   outline: none;
 }
 
-p, ul, ol {
+p,
+ul,
+ol {
   margin-bottom: 1.5em;
   font-size: 15px;
   color: #5c5c5c;
-  font-family: 'Libre Baskerville', Arial, serif;
+  font-family: "Libre Baskerville", Arial, serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #212121;
-  font-family: 'Libre Baskerville', Arial, serif;
+  font-family: "Libre Baskerville", Arial, serif;
   font-weight: 400;
   margin: 0 0 20px 0;
 }
@@ -108,7 +121,9 @@ figure {
     padding: 5px;
   }
 }
-#fh5co-header nav ul li a:hover, #fh5co-header nav ul li a:active, #fh5co-header nav ul li a:focus {
+#fh5co-header nav ul li a:hover,
+#fh5co-header nav ul li a:active,
+#fh5co-header nav ul li a:focus {
   color: #000 !important;
   text-decoration: none;
   outline: none;
@@ -118,7 +133,8 @@ figure {
   color: black !important;
 }
 
-.fh5co-projects-feed, .footer-content {
+.fh5co-projects-feed,
+.footer-content {
   margin: 0 auto;
   max-width: 1400px;
 }
@@ -149,7 +165,9 @@ figure {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-.fh5co-projects-feed .fh5co-project > a:hover h2, .fh5co-projects-feed .fh5co-project > a:active h2, .fh5co-projects-feed .fh5co-project > a:focus h2 {
+.fh5co-projects-feed .fh5co-project > a:hover h2,
+.fh5co-projects-feed .fh5co-project > a:active h2,
+.fh5co-projects-feed .fh5co-project > a:focus h2 {
   color: #000;
 }
 
@@ -198,8 +216,10 @@ figure {
 .page-content .meta a {
   color: #5c5c5c;
 }
-.page-content .meta a:hover, .page-content .meta a:active, .page-content .meta a:focus {
-  color: #000 !important;Checkout
+.page-content .meta a:hover,
+.page-content .meta a:active,
+.page-content .meta a:focus {
+  color: #000 !important;
 }
 @media screen and (max-width: 480px) {
   .page-content {
@@ -221,7 +241,9 @@ figure {
 #fh5co-footer a {
   color: #5c5c5c;
 }
-#fh5co-footer a:hover, #fh5co-footer a:active, #fh5co-footer a:focus {
+#fh5co-footer a:hover,
+#fh5co-footer a:active,
+#fh5co-footer a:focus {
   color: #000 !important;
 }
 #fh5co-footer .social {
@@ -236,7 +258,9 @@ figure {
     padding: 5px;
   }
 }
-#fh5co-footer .social a:hover, #fh5co-footer .social a:active, #fh5co-footer .social a:focus {
+#fh5co-footer .social a:hover,
+#fh5co-footer .social a:active,
+#fh5co-footer .social a:focus {
   color: #000 !important;
 }
 
@@ -261,7 +285,7 @@ figure {
     padding-bottom: 30px;
   }
 }
-/* Dropdown Menu Styles */
+
 #fh5co-header nav ul {
   list-style-type: none;
   padding: 0;
@@ -306,18 +330,3 @@ figure {
 #fh5co-header nav ul li:hover .dropdown-menu {
   display: block;
 }
-/*# sourceMappingURL=style.css.map */
-
-
-
-
-
-
-
-
-
-
-
-
-
-

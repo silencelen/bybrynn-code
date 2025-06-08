@@ -55,23 +55,22 @@ h6 {
   background: #5e8fbb;
 }
 
-/* Updated to switch between #special and #special2 based on screen size */
+
 #special {
-  display: block;  /* Show on larger screens */
+  display: block;  
 }
 
 #special2 {
-  display: none;   /* Hide on larger screens */
+  display: none;   
 }
 
-/* Switch behavior for smaller screens */
 @media (max-width: 1020px) {
   #special {
-    display: none;  /* Hide on smaller screens */
+    display: none;  
   }
   
   #special2 {
-    display: block;  /* Show on smaller screens */
+    display: block;  
   }
 }
 
@@ -124,7 +123,7 @@ h6 {
   color: black !important;
 }
 
-/* Dropdown menu styling */
+
 #fh5co-header nav ul li .dropdown-menu {
   display: none;
   position: absolute;

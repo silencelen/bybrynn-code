@@ -132,7 +132,7 @@ div#fh5co-projects-feed {
 
 .fh5co-projects-feed .fh5co-project {
   display: inline-block;
-  /* margin: 20px 20px 20px; */
+
   margin: 13px 10px 0px;
   width: 290px;
 }
@@ -280,7 +280,6 @@ div#fh5co-projects-feed {
   }
 }
 
-/* New CSS */
 #fh5co-projects-feed {
   text-align: center;
 }
@@ -298,7 +297,7 @@ div#fh5co-projects-feed {
     margin-bottom: 0px;
   }
 }
-/*# sourceMappingURL=style.css.map */
+
 @media (max-width: 1200px) {
   #fh5co-projects-feed {
     max-width: 990px !important;
@@ -333,7 +332,6 @@ div#fh5co-projects-feed {
   cursor: pointer;
 }
 
-/* Style for the dropdown content */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -344,7 +342,6 @@ div#fh5co-projects-feed {
   z-index: 1;
 }
 
-/* Style for the sorting options */
 .dropdown-content span {
   padding: 12px 16px;
   display: block;
@@ -353,7 +350,6 @@ div#fh5co-projects-feed {
   cursor: pointer;
 }
 
-/* Change color on hover */
 .dropdown-content span:hover {
   background-color: #ddd;
 }
@@ -416,7 +412,7 @@ div#fh5co-projects-feed {
   width: 100%;
   height: auto;
   margin: 4% auto;
-  /* box-shadow:-3px 5px 15px #000; */
+
   cursor: pointer;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -489,7 +485,7 @@ div#fh5co-projects-feed {
 .fh5co-project {
   width: calc(25% - 20px);
   margin: 10px;
-  margin-bottom: 0; /* Add this line to remove bottom margin */
+  margin-bottom: 0;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -596,8 +592,6 @@ div#fh5co-projects-feed {
   }
 }
 
-/* FOOTER STYLES
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .page-footer {
   position: fixed;
   right: 0;
@@ -614,7 +608,7 @@ div#fh5co-projects-feed {
   display: flex;
   margin-left: 4px;
 }
-/* Dropdown Menu Styles */
+
 #fh5co-header nav ul {
   list-style-type: none;
   padding: 0;

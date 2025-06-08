@@ -1,20 +1,16 @@
 <?php
-// submissions.php
 
-// 1) Set your session cookie parameters BEFORE you call session_start()
 session_set_cookie_params([
   'lifetime' => 0,
   'path'     => '/',
-  'domain'   => '.bybrynn.com',   // leading dot so subpaths & apex both work
+  'domain'   => '.bybrynn.com',
   'secure'   => true,
   'httponly' => true,
   'samesite' => 'Lax',
 ]);
 
-// 2) Now start the session (once)
 session_start();
 
-// 3) Debug: log session + cookies + incoming GET/state
 file_put_contents(__DIR__ . '/admin_debug.log',
   date('c') . " SESSION ID   : " . session_id() . "\n" .
   date('c') . " COOKIE ARRAY : " . print_r($_COOKIE, true) . "\n" .
@@ -23,15 +19,12 @@ file_put_contents(__DIR__ . '/admin_debug.log',
   FILE_APPEND
 );
 
-// composer autoload + imports
 require __DIR__ . '/vendor/autoload.php';
 use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
 use Stevenmaguire\OAuth2\Client\Provider\Microsoft;
 
-// only run OAuth on GET (never on POST form submissions)
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 
-// --- CONFIGURATION: pulled from IIS FastCGI env vars ---
 $clientId     = getenv('MICROSOFT_OAUTH_CLIENT_ID');
 $clientSecret = getenv('MICROSOFT_OAUTH_CLIENT_SECRET');
 $tenantId     = 'cd47551c-33c7-4b7f-87a9-df19f9169121';
@@ -41,7 +34,6 @@ if (! $clientId || ! $clientSecret) {
     exit('OAuth client credentials not configured.');
 }
 
-// build the provider
 $provider = new Microsoft([
     'clientId'                => $clientId,
     'clientSecret'            => $clientSecret,
@@ -51,15 +43,11 @@ $provider = new Microsoft([
     'urlResourceOwnerDetails' => 'https://graph.microsoft.com/oidc/userinfo',
 ]);
 
-// catch any Azure errors
 if (isset($_GET['error'])) {
     exit('Azure error: ' . htmlspecialchars(urldecode($_GET['error_description'] ?? $_GET['error'])));
 }
 
-// 4) OAuth dance
 if (! isset($_GET['code'])) {
-    // only ask for the Graph scopes you've granted (User.Read),
-    // and let MSFT v2.0 implicitly handle openid/profile/offline_access for you
     $authUrl = $provider->getAuthorizationUrl([
         'scope'  => ['User.Read'],
         'prompt' => 'select_account'
@@ -69,13 +57,11 @@ if (! isset($_GET['code'])) {
     exit;
 }
 
-// state check
 if (empty($_GET['state']) || ($_GET['state'] !== ($_SESSION['oauth2state'] ?? null))) {
     unset($_SESSION['oauth2state']);
     exit('Invalid OAuth state');
 }
 
-// exchange code for token
 try {
     $token = $provider->getAccessToken('authorization_code', [
         'code' => $_GET['code']
@@ -84,37 +70,21 @@ try {
     exit('Error fetching access token: ' . $e->getMessage());
 }
 
-// optional: fetch user info
 try {
     $owner = $provider->getResourceOwner($token);
-    // you can now do e.g. $owner->getEmail() or $owner->getDisplayName()
 } catch (Exception $e) {
-    // ignore or log
 }
 
-    // now you’re authenticated — fall through to show the form below
-}
-// ────────────────────────────────────────────────────────────────────
-//      <<<  UPDATED AUTH SECTION ENDS HERE  >>>
-// ────────────────────────────────────────────────────────────────────
-
-// ================================================
-// BELOW: your existing submission handling logic
-// ================================================
-
-// Full error reporting for debugging (disable in production)
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-// Debug log file
 $debugLog = __DIR__ . '/admin_debug.log';
 function logd($msg) {
     global $debugLog;
     file_put_contents($debugLog, date('c') . ' ' . $msg . PHP_EOL, FILE_APPEND);
 }
 
-// Helper to respond and exit (also logs)
 function respond($msg) {
     logd('RESPOND: ' . $msg);
     echo '<p>' . htmlspecialchars($msg) . '</p>';
@@ -127,7 +97,6 @@ $entriesFile = __DIR__ . '/art/entries.json';
 $indexFile   = __DIR__ . '/art/index.html';
 $imagesDir   = __DIR__ . '/art/images';
 
-// 1. Validate environment
 if (!is_dir($imagesDir)) {
     if (!mkdir($imagesDir, 0755, true)) {
         respond('Error: Cannot create images directory.');
@@ -148,11 +117,9 @@ if (!file_exists($indexFile) || !is_writable($indexFile)) {
 }
 logd('Environment validated');
 
-// 2. Handle submission
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     try {
         logd('Handling POST');
-        // Gather inputs
         $title       = trim($_POST['title'] ?? '');
         $medium      = trim($_POST['medium'] ?? '');
         $dimensions  = trim($_POST['dimensions'] ?? '');
@@ -165,17 +132,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             respond('Error: Title, medium, dimensions, and year are required.');
         }
 
-        // Derive slug
         $slug = preg_replace('/[^a-z0-9]/', '', strtolower($title));
         if (!$slug) respond('Error: Invalid title for slug.');
         logd("Slug: $slug");
 
-        // Compose fields
         $subheading = "$medium - $dimensions - $year";
         $metaTitle  = "Art byBrynn - $title - Portfolio works";
         $onionUrl   = "http://artbybryndkmgb6ach4uqhrhsfkqbtcf3vrptfkljhclc3bxk74giwid.onion/T/art/$slug";
 
-        // Handle thumbnail (required)
         if (empty($_FILES['thumbnail']) || $_FILES['thumbnail']['error'] !== UPLOAD_ERR_OK) {
             respond('Error: Thumbnail upload required.');
         }
@@ -190,7 +154,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $thumbPath = "/art/images/$thumbName";
         logd("Thumbnail saved: $thumbDest");
 
-        // Handle high-res (optional)
         $highresPath = '';
         if (!empty($_FILES['highres']) && $_FILES['highres']['error'] === UPLOAD_ERR_OK) {
             if ($_FILES['highres']['type'] === 'image/webp') {
@@ -203,7 +166,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
         }
 
-        // Load and parse entries.json
         $raw = file_get_contents($entriesFile);
         if ($raw === false) respond('Error: Unable to read entries.json.');
         $decoded   = json_decode($raw, true);
@@ -213,10 +175,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             logd('Loaded entries.json count=' . count($entries));
         } else {
             logd('JSON decode error: ' . json_last_error_msg());
-            $entries = null;  // will fallback to textual append
+            $entries = null;
         }
 
-        // Build new entry
         $newEntry = [
             'subheading'  => $subheading,
             'metaTitle'   => $metaTitle,
@@ -229,7 +190,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         ];
 
         if ($jsonValid) {
-            // JSON-valid path: update PHP array
             $prev = '';
             if (!empty($entries)) {
                 $keys = array_keys($entries);
@@ -248,10 +208,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
             logd('Updated entries.json count=' . count($entries));
         } else {
-            // Fallback: textual append
             $frag = json_encode([$slug => $newEntry], JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
             $frag = trim($frag);
-            $frag = substr($frag, 1, -1); // strip outer {}
+            $frag = substr($frag, 1, -1);
             $pos    = strrpos($raw, '}');
             if ($pos === false) {
                 respond('Error: Cannot find closing brace in entries.json');
@@ -267,31 +226,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             logd('Appended entry textually');
         }
 
-        // Normalize line endings and insert gallery snippet
         $html = file_get_contents($indexFile);
         if ($html === false) respond('Error: Cannot read index.html');
         $html = str_replace(["\r\n", "\r"], "\n", $html);
 
-        // New marker: the closing of gallery and opening of footer
         $marker = "        </div>\n    </div>\n    <footer id=fh5co-footer role=contentinfo>";
         $pos    = strpos($html, $marker);
         if ($pos === false) {
             respond('Error: Gallery closing marker not found.');
         }
 
-        // Build the new project block
         $block  = "            <div class=\"fh5co-project masonry-brick\" data-date=\"$date\">\n";
         $block .= "                <a href=\"page.html?art=$slug\">\n";
         $block .= "                    <img src=\"$thumbPath\" loading=\"lazy\" alt=\"$slug\">\n";
         $block .= "                </a>\n";
         $block .= "            </div>\n";
 
-        // Insert it immediately before the footer marker
         $newHtml = substr($html, 0, $pos)
                  . $block
                  . substr($html, $pos);
 
-        // Write back, converting LFs to system EOLs
         if (file_put_contents($indexFile, str_replace("\n", PHP_EOL, $newHtml)) === false) {
             respond('Error: Failed to update index.html');
         }
