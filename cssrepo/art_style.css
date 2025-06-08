@@ -310,21 +310,24 @@ div#fh5co-projects-feed {
     position: unset !important;
   }
 }
-@media only screen and (max-width: 1389px) {
+@media only screen and (max-width: 1240px) {
   .sorting {
     display: flex;
-    justify-content: center !important;
+    justify-content: left !important;
     position: relative;
     top: 10px;
+    padding-left: 15%;
   }
 }
-
-.sorting {
-  display: flex;
-  justify-content: left;
-  position: relative;
-  top: 10px;
-  left: -60px;
+@media only screen and (max-width: 639px) {
+  .sorting {
+    display: flex;
+    justify-content: left;
+    position: relative;
+    top: 10px;
+    left: -60px;
+    padding-left: 40%;
+  }
 }
 .sorting h6 {
   cursor: pointer;
