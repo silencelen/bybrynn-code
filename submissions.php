@@ -256,6 +256,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         respond('Unexpected error: ' . $e->getMessage());
     }
 }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">

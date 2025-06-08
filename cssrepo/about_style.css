@@ -130,7 +130,7 @@ figure {
 }
 
 #fh5co-header nav ul li.active a {
-  text-decoration: line-through !important;
+  text-decoration: underline !important;
   color: black !important;
 }
 
