@@ -1,0 +1,35 @@
+.inputbox {
+  /* color for the “Title of the Artwork:” text */
+  color: #333333;
+}
+
+/* ensure the text the user types is legible */
+.inputbox input {
+  color: #000000;
+}
+
+/* style the placeholder */
+.inputbox input::placeholder {
+  color: #aaaaaa;
+}
+
+/* for broader browser support you can also add the vendor-prefixed rules: */
+.inputbox input::-webkit-input-placeholder {
+  color: #aaaaaa;
+}
+.inputbox input:-ms-input-placeholder {
+  color: #aaaaaa;
+}
+.inputbox input::-ms-input-placeholder {
+  color: #aaaaaa;
+}
+.inputbox input::-moz-placeholder {
+  color: #aaaaaa;
+}
+.inputbox input:-moz-placeholder {
+  color: #aaaaaa;
+}
+
+.inputbox {
+  padding: 10px;
+}

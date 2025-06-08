@@ -205,20 +205,55 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Admin - Add Art Entry</title>
+    <title>Submission Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel=stylesheet>
+    <link rel=stylesheet href=/cssrepo/bootstrap.css>
+    <link rel=stylesheet href=/cssrepo/art_style.css>    
+    <link rel=stylesheet href=/cssrepo/submissions_style.css>
+    <style>
+        a.fixed {
+            position: fixed;
+            right: 0;
+            top: 0;
+            max-width: 60px
+        }
+    </style>
+    <a class=fixed href=https://www.instagram.com/bybrynnm/ target=_blank><img src=/images/insta.png></a>
+
 </head>
+
 <body>
-    <h1>Add New Art Entry</h1>
+
+        <header id=fh5co-header role=banner>
+        <div class="container text-center">
+            <div id="fh5co-logo">
+                <a href="/"><img src="/images/logo.webp" alt="Home-Art_by_brynn"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href=/about>about.</a></li>
+                    <li><a href=/commissions>commissions.</a></li>
+                    <li><a href=/shop>shop.</a></li>
+                    <li><a href=/portfolio>portfolio.</a></li>
+            </nav>
+        </div>
+        </br>
+    </header>
+    <center>
+    <h1>Submissions Portal</h1>
+    </br></br>
+
     <form method="post" enctype="multipart/form-data">
-        <input type="text" name="title" placeholder="Title" required><br>
-        <input type="text" name="medium" placeholder="Medium" required><br>
-        <input type="text" name="dimensions" placeholder="Dimensions" required><br>
-        <input type="text" name="year" placeholder="Year" required><br>
-        <textarea name="description" placeholder="Description"></textarea><br>
-        <input type="date" name="date" value="<?php echo date('Y-m-d'); ?>"><br>
-        <label>Thumbnail (.webp): <input type="file" name="thumbnail" accept="image/webp" required></label><br>
-        <label>High-res (.webp): <input type="file" name="highres" accept="image/webp"></label><br>
-        <button type="submit">Add Entry</button>
+        <div class="inputbox">        Title of the Artwork:   <input type="text" name="title" placeholder="Exactly as it will appear" required><br></div>
+        <div class="inputbox">        Medium:   <input type="text" name="medium" placeholder="Medium" required><br></div>
+        <div class="inputbox">        Dimensions:   <input type="text" name="dimensions" placeholder="Dimensions" required><br></div>
+        <div class="inputbox">        Year Finished:   <input type="text" name="year" placeholder="20xx" required><br></div>
+        <div class="inputbox">        Artwork description:   <textarea name="description" placeholder="Accompaning Information below images"></textarea><br></div>
+        <div class="inputbox">        Current Date:   <input type="date" name="date" value="<?php echo date('Y-m-d'); ?>"><br></div>
+        <div class="inputbox"><label> Thumbnail (.webp): <input type="file" name="thumbnail" accept="image/webp" required></label><br></div>
+        <div class="inputbox"><label> High-res (.webp): <input type="file" name="highres" accept="image/webp"></label><br></div>
+        <div class="inputbox"><button type="submit">Add Entry</button></div>    
     </form>
+    </center>
 </body>
 </html>
