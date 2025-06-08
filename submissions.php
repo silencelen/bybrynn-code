@@ -1,5 +1,103 @@
 <?php
-// admin.php
+// submissions.php
+
+// 1) Set your session cookie parameters BEFORE you call session_start()
+session_set_cookie_params([
+  'lifetime' => 0,
+  'path'     => '/',
+  'domain'   => '.bybrynn.com',   // leading dot so subpaths & apex both work
+  'secure'   => true,
+  'httponly' => true,
+  'samesite' => 'Lax',
+]);
+
+// 2) Now start the session (once)
+session_start();
+
+// 3) Debug: log session + cookies + incoming GET/state
+file_put_contents(__DIR__ . '/admin_debug.log',
+  date('c') . " SESSION ID   : " . session_id() . "\n" .
+  date('c') . " COOKIE ARRAY : " . print_r($_COOKIE, true) . "\n" .
+  date('c') . " GET          : " . print_r($_GET, true) . "\n" .
+  date('c') . " SESS         : " . print_r($_SESSION, true) . "\n\n",
+  FILE_APPEND
+);
+
+// composer autoload + imports
+require __DIR__ . '/vendor/autoload.php';
+use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
+use Stevenmaguire\OAuth2\Client\Provider\Microsoft;
+
+// --- CONFIGURATION: pulled from IIS FastCGI env vars ---
+$clientId     = getenv('MICROSOFT_OAUTH_CLIENT_ID');
+$clientSecret = getenv('MICROSOFT_OAUTH_CLIENT_SECRET');
+$tenantId     = 'cd47551c-33c7-4b7f-87a9-df19f9169121';
+$redirectUri  = 'https://bybrynn.com/submissions';
+
+if (! $clientId || ! $clientSecret) {
+    exit('OAuth client credentials not configured.');
+}
+
+// build the provider
+$provider = new Microsoft([
+    'clientId'                => $clientId,
+    'clientSecret'            => $clientSecret,
+    'redirectUri'             => $redirectUri,
+    'urlAuthorize'            => "https://login.microsoftonline.com/{$tenantId}/oauth2/v2.0/authorize",
+    'urlAccessToken'          => "https://login.microsoftonline.com/{$tenantId}/oauth2/v2.0/token",
+    'urlResourceOwnerDetails' => 'https://graph.microsoft.com/oidc/userinfo',
+]);
+
+// catch any Azure errors
+if (isset($_GET['error'])) {
+    exit('Azure error: ' . htmlspecialchars(urldecode($_GET['error_description'] ?? $_GET['error'])));
+}
+
+// 4) OAuth dance
+if (! isset($_GET['code'])) {
+    // only ask for the Graph scopes you've granted (User.Read),
+    // and let MSFT v2.0 implicitly handle openid/profile/offline_access for you
+    $authUrl = $provider->getAuthorizationUrl([
+        'scope'  => ['User.Read'],
+        'prompt' => 'select_account'
+    ]);
+    $_SESSION['oauth2state'] = $provider->getState();
+    header('Location: ' . $authUrl);
+    exit;
+}
+
+// state check
+if (empty($_GET['state']) || ($_GET['state'] !== ($_SESSION['oauth2state'] ?? null))) {
+    unset($_SESSION['oauth2state']);
+    exit('Invalid OAuth state');
+}
+
+// exchange code for token
+try {
+    $token = $provider->getAccessToken('authorization_code', [
+        'code' => $_GET['code']
+    ]);
+} catch (IdentityProviderException $e) {
+    exit('Error fetching access token: ' . $e->getMessage());
+}
+
+// optional: fetch user info
+try {
+    $owner = $provider->getResourceOwner($token);
+    // you can now do e.g. $owner->getEmail() or $owner->getDisplayName()
+} catch (Exception $e) {
+    // ignore or log
+
+    // now you’re authenticated — fall through to show the form below
+}
+// ────────────────────────────────────────────────────────────────────
+//      <<<  UPDATED AUTH SECTION ENDS HERE  >>>
+// ────────────────────────────────────────────────────────────────────
+
+// ================================================
+// BELOW: your existing submission handling logic
+// ================================================
+
 // Full error reporting for debugging (disable in production)
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
@@ -235,6 +333,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <li><a href=/commissions>commissions.</a></li>
                     <li><a href=/shop>shop.</a></li>
                     <li><a href=/portfolio>portfolio.</a></li>
+                </ul>
             </nav>
         </div>
         </br>
@@ -248,7 +347,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="inputbox">        Medium:   <input type="text" name="medium" placeholder="Medium" required><br></div>
         <div class="inputbox">        Dimensions:   <input type="text" name="dimensions" placeholder="Dimensions" required><br></div>
         <div class="inputbox">        Year Finished:   <input type="text" name="year" placeholder="20xx" required><br></div>
-        <div class="inputbox">        Artwork description:   <textarea name="description" placeholder="Accompaning Information below images"></textarea><br></div>
+        <div class="inputbox">        Artwork description:   <textarea name="description" placeholder="Accompanying Information below images"></textarea><br></div>
         <div class="inputbox">        Current Date:   <input type="date" name="date" value="<?php echo date('Y-m-d'); ?>"><br></div>
         <div class="inputbox"><label> Thumbnail (.webp): <input type="file" name="thumbnail" accept="image/webp" required></label><br></div>
         <div class="inputbox"><label> High-res (.webp): <input type="file" name="highres" accept="image/webp"></label><br></div>
