@@ -28,6 +28,9 @@ require __DIR__ . '/vendor/autoload.php';
 use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
 use Stevenmaguire\OAuth2\Client\Provider\Microsoft;
 
+// only run OAuth on GET (never on POST form submissions)
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+
 // --- CONFIGURATION: pulled from IIS FastCGI env vars ---
 $clientId     = getenv('MICROSOFT_OAUTH_CLIENT_ID');
 $clientSecret = getenv('MICROSOFT_OAUTH_CLIENT_SECRET');
@@ -87,6 +90,7 @@ try {
     // you can now do e.g. $owner->getEmail() or $owner->getDisplayName()
 } catch (Exception $e) {
     // ignore or log
+}
 
     // now you’re authenticated — fall through to show the form below
 }
