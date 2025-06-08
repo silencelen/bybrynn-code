@@ -36,15 +36,16 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href=/about>about.</a></li>
-                    <li><a href=/commissions>commissions.</a></li>
-                    <li><a href=/shop>shop.</a></li>
-                    <li class=active><a>portfolio.</a></li>
-
-                </ul>
-                <ul>
-                    <li class=active><a href=/art>art.</a></li>
-                    <li><a href=/photography>photography.</a></li>
+                    <li><a href="/about">about.</a></li>
+                    <li><a href="/commissions">commissions.</a></li>
+                    <li><a href="/shop">shop.</a></li>
+                    <li class="dropdown">
+                        <a>portfolio.</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/art/">art.</a></li>
+                            <li><a href="/photography/">photography.</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -299,11 +300,10 @@
                 </div>
             </div>
     </footer>
-
+    <script src=/jsrepo/touch_dropdown.js></script>
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
     </script>
-    <script src=/jsrepo/touch_dropdown.js></script>
     <script src=/jsrepo/gallery_sorter.js></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

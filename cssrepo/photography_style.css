@@ -134,7 +134,7 @@ div#fh5co-projects-feed {
 .fh5co-projects-feed .fh5co-project {
   display: inline-block;
   /* margin: 20px 20px 20px; */
-  margin: 13px 10px 0px;
+  margin: 13px 0px 0px;
   width: 290px;
 }
 @media screen and (max-width: 480px) {
@@ -495,7 +495,7 @@ div#fh5co-projects-feed {
 }
 
 .fh5co-project img {
-  width: 75%;
+  width: 85%;
   margin-top: 8px;
   padding: 0 4px;
   border-radius: 10px;
@@ -611,4 +611,49 @@ div#fh5co-projects-feed {
 .page-footer a {
   display: flex;
   margin-left: 4px;
+}
+/* Dropdown Menu Styles */
+#fh5co-header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#fh5co-header nav ul li {
+  position: relative;
+}
+
+#fh5co-header nav ul li a {
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  color: #5c5c5c !important;
+}
+
+#fh5co-header nav ul li .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  z-index: 1000;
+  opacity: 90%;
+}
+
+#fh5co-header nav ul li .dropdown-menu li {
+  display: block;
+}
+
+#fh5co-header nav ul li .dropdown-menu li a {
+  padding: 10px 20px;
+  white-space: nowrap;
+  color: #5c5c5c !important;
+}
+
+#fh5co-header nav ul li:hover .dropdown-menu {
+  display: block;
 }
