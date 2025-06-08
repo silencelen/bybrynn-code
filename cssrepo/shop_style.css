@@ -7,14 +7,14 @@ body {
   font-family: "Libre Baskerville", serif;
   line-height: 1.8;
   font-size: 16px;
-  background: url(../images/background.webp), #f6f2ec;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+  background: url(/images/background.webp), #f6f2ec;
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+  background-position: top center;
   color: #848484;
   font-weight: 300;
   overflow-x: hidden;
-  padding: 1;
+  padding: 1px;
 }
 
 body.fh5co-offcanvas {
