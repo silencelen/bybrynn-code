@@ -319,20 +319,19 @@ div#fh5co-projects-feed {
 }
 @media only screen and (max-width: 1389px) {
   .sorting {
-    display: flex;
-    justify-content: center !important;
-    position: relative;
-    top: 10px;
+    justify-content: flex-start !important;
+    padding-left: 10% !important;
   }
 }
 
 .sorting {
   display: flex;
-  justify-content: left;
+  justify-content: flex-start;
   position: relative;
   top: 10px;
-  left: -60px;
+  padding-left: 10%;
 }
+
 .sorting h6 {
   cursor: pointer;
 }
