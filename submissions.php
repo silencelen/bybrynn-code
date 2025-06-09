@@ -1,20 +1,16 @@
 <?php
-// submissions.php
 
-// 1) Set your session cookie parameters BEFORE you call session_start()
 session_set_cookie_params([
   'lifetime' => 0,
   'path'     => '/',
-  'domain'   => '.bybrynn.com',   // leading dot so subpaths & apex both work
+  'domain'   => '.bybrynn.com',
   'secure'   => true,
   'httponly' => true,
   'samesite' => 'Lax',
 ]);
 
-// 2) Now start the session (once)
 session_start();
 
-// 3) Debug: log session + cookies + incoming GET/state
 file_put_contents(
   __DIR__ . '/admin_debug.log',
   date('c') . " SESSION ID   : " . session_id() . "\n" .
@@ -28,9 +24,6 @@ require __DIR__ . '/vendor/autoload.php';
 use League\OAuth2\Client\Provider\Exception\IdentityProviderException;
 use Stevenmaguire\OAuth2\Client\Provider\Microsoft;
 
-// ────────────────────────────────────────────────────────────────────
-//       OAuth dance (only on initial GET, not on form POST)
-// ────────────────────────────────────────────────────────────────────
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     $clientId     = getenv('MICROSOFT_OAUTH_CLIENT_ID');
     $clientSecret = getenv('MICROSOFT_OAUTH_CLIENT_SECRET');
@@ -55,7 +48,6 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     }
 
     if (! isset($_GET['code'])) {
-        // no code yet, redirect user to Microsoft
         $authUrl = $provider->getAuthorizationUrl([
             'scope'  => ['User.Read'],
             'prompt' => 'select_account',
@@ -78,24 +70,17 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
         exit('Error fetching access token: ' . $e->getMessage());
     }
 
-    // optional: fetch the user
     try {
         $owner = $provider->getResourceOwner($token);
     } catch (Exception $e) {
-        // ignore or log if you like
     }
 }
 
-// ────────────────────────────────────────────────────────────────────
-//      BELOW: your existing submission handling logic
-// ────────────────────────────────────────────────────────────────────
 
-// Turn on errors for debugging (disable in production)
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-// Logging helpers
 $debugLog = __DIR__ . '/admin_debug.log';
 function logd($msg) {
     global $debugLog;
@@ -109,12 +94,10 @@ function respond($msg) {
 
 logd('=== Script Start ===');
 
-// Paths
 $entriesFile = __DIR__ . '/art/entries.json';
 $indexFile   = __DIR__ . '/art/index.html';
 $imagesDir   = __DIR__ . '/art/images';
 
-// 1. Validate environment
 if (!is_dir($imagesDir)) {
     if (!mkdir($imagesDir, 0755, true)) {
         respond('Error: Cannot create images directory.');
@@ -135,11 +118,9 @@ if (!file_exists($indexFile) || !is_writable($indexFile)) {
 }
 logd('Environment validated');
 
-// 2. Handle submission
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     try {
         logd('Handling POST');
-        // Gather inputs
         $title       = trim($_POST['title'] ?? '');
         $medium      = trim($_POST['medium'] ?? '');
         $dimensions  = trim($_POST['dimensions'] ?? '');
@@ -152,17 +133,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             respond('Error: Title, medium, dimensions, and year are required.');
         }
 
-        // Derive slug
         $slug = preg_replace('/[^a-z0-9]/', '', strtolower($title));
         if (!$slug) respond('Error: Invalid title for slug.');
         logd("Slug: $slug");
 
-        // Compose fields
         $subheading = "$medium - $dimensions - $year";
         $metaTitle  = "Art byBrynn - $title - Portfolio works";
         $onionUrl   = "http://artbybryndkmgb6ach4uqhrhsfkqbtcf3vrptfkljhclc3bxk74giwid.onion/T/art/$slug";
 
-        // Handle thumbnail (required)
         if (empty($_FILES['thumbnail']) || $_FILES['thumbnail']['error'] !== UPLOAD_ERR_OK) {
             respond('Error: Thumbnail upload required.');
         }
@@ -177,7 +155,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $thumbPath = "/art/images/$thumbName";
         logd("Thumbnail saved: $thumbDest");
 
-        // Handle high-res (optional)
         $highresPath = '';
         if (!empty($_FILES['highres']) && $_FILES['highres']['error'] === UPLOAD_ERR_OK) {
             if ($_FILES['highres']['type'] === 'image/webp') {
@@ -190,7 +167,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
         }
 
-        // Load and parse entries.json
         $raw = file_get_contents($entriesFile);
         if ($raw === false) respond('Error: Unable to read entries.json.');
         $decoded   = json_decode($raw, true);
@@ -203,7 +179,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $entries = null;
         }
 
-        // Build new entry
         $newEntry = [
             'subheading'  => $subheading,
             'metaTitle'   => $metaTitle,
@@ -216,7 +191,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         ];
 
         if ($jsonValid) {
-            // JSON-valid path: update PHP array
             $prev = '';
             if (!empty($entries)) {
                 $keys = array_keys($entries);
@@ -235,7 +209,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
             logd('Updated entries.json count=' . count($entries));
         } else {
-            // Fallback: textual append
             $frag = json_encode([$slug => $newEntry], JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
             $frag = trim($frag);
             $frag = substr($frag, 1, -1);
@@ -254,7 +227,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             logd('Appended entry textually');
         }
 
-        // Insert into index.html
         $html = file_get_contents($indexFile);
         if ($html === false) respond('Error: Cannot read index.html');
         $html = str_replace(["\r\n", "\r"], "\n", $html);
