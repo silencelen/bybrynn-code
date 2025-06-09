@@ -252,7 +252,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
         logd('Updated index.html');
 
-        respond("Entry '$title' added successfully.");
+        header('Location: /art#bottom', true, 302);
+        exit;
 
     } catch (Throwable $e) {
         respond('Unexpected error: ' . $e->getMessage());
