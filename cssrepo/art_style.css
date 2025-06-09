@@ -16,6 +16,10 @@ body.fh5co-offcanvas {
   overflow: hidden;
 }
 
+.sorting {
+  position: relative;
+  display: inline-block;
+}
 #fh5co-header nav ul li.dropdown > a {
   text-decoration: underline;
 }
