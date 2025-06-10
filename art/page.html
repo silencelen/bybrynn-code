@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title id="meta-title">Loading...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" id="meta-desc" content="">
+    <meta name="keywords" content="art, bybrynn, paintings, portfolio, ...">
+    <meta name="author" content="BrynnMonahan">
+    <meta http-equiv="onion-location" id="meta-onion" content="">
+    <link rel="icon" href="/images/icon.ico">
+    <link rel="stylesheet" href="/cssrepo/bootstrap.css">
+    <link rel="stylesheet" href="/cssrepo/art-ind_style.css">
+    <script src="/jsrepo/art-renders.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel=stylesheet>
+    <style>
+        a.fixed {
+            position: fixed;
+            right: 0;
+            top: 0;
+            max-width: 60px
+        }
+    </style>
+    <a class=fixed href=https://www.instagram.com/bybrynnm/ target=_blank><img src=/images/insta.png></a>
+
+</head>
+
+<body>
+    <header id="fh5co-header" role="banner">
+        <div class="container text-center">
+            <div id="fh5co-logo">
+                <a href="/"><img src="/images/logo.webp" alt="Home-Art_by_brynn"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/about">about.</a></li>
+                    <li><a href="/commissions">commissions.</a></li>
+                    <li><a href="/shop">shop.</a></li>
+                    <li class="dropdown">
+                        <a>portfolio.</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/art/">art.</a></li>
+                            <li><a href="/photography/">photography.</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-content">
+        <center>
+            <h1 id="art-title" class="mb0">Loading...</h1>
+            <div class="meta" id="art-subheading"></div>
+            </br>
+            <p><img id="art-image" src="" alt="bybrynn"></p>
+            <p id="art-description"></p>
+            <p>
+                <a id="prev-link"><button type="button">Previous</button></a> -
+                <a id="next-link"><button type="button">Next</button></a>
+            </p>
+        </center>
+    </div>
+
+    <footer id=fh5co-footer role=contentinfo>
+        <div class=container-fluid>
+            <div class=footer-content>
+                <div class=copyright><small>&copy; <span id="year"></span> - Brynn Monahan - All Rights
+                        Reserved.</small></br><a href="mailto: contact@bybrynn.com">Contact me</a>
+                </div>
+            </div>
+    </footer>
+    <script src=/jsrepo/touch_dropdown.js></script>
+    <script>
+
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

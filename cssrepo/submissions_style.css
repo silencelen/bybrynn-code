@@ -1,0 +1,42 @@
+﻿.art-form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.inputbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.label-text {
+  flex: 1;
+  text-align: left;
+}
+
+.inputbox input,
+.inputbox textarea {
+  flex: 0 0 auto;
+  margin-left: 1rem;
+}
+
+.inputbox textarea {
+  width: 60%;
+}
+
+.submitbox {
+  justify-content: center;
+}
+
+.submitbox button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+span.label-text {
+  color: black;
+}

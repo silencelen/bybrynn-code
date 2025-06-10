@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!--bybrynn-code beta version 3-->
+<!DOCTYPE html>
 <html class=no-js lang="en">
 
 <head>
@@ -11,11 +11,11 @@
     <meta name=author content=BrynnMonahan>
     <meta http-equiv="onion-location"
         content="http://artbybryndkmgb6ach4uqhrhsfkqbtcf3vrptfkljhclc3bxk74giwid.onion/T/uhoh">
-    <link rel=icon href=images/icon.ico>
+    <link rel=icon href=/images/icon.ico>
     <link rel=preconnect href=https://fonts.googleapis.com>
     <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
-    <link rel=stylesheet href=css/bootstrap.css>
-    <link rel=stylesheet href=css/style.css>
+    <link rel=stylesheet href=/cssrepo/bootstrap.css>
+    <link rel=stylesheet href=/cssrepo/about_style.css>
     <style>
         a.fixed {
             position: fixed;
@@ -24,27 +24,29 @@
             max-width: 60px
         }
     </style>
-    <a class=fixed href=https://www.instagram.com/bybrynnm/ target=_blank><img src=images/insta.png alt=instagram></a>
+    <a class=fixed href=https://www.instagram.com/bybrynnm/ target=_blank><img src=/images/insta.png alt=instagram></a>
 </head>
 
 <body>
     <header id=fh5co-header role=banner>
-        <div class="container text-center">            <div id="fh5co-logo">
-                <a href="/"><img src="images/logo.webp" alt="Home-Art_by_brynn"></a>
+        <div class="container text-center">
+            <div id="fh5co-logo">
+                <a href="/"><img src="/images/logo.webp" alt="Home-Art_by_brynn"></a>
             </div>
             <nav>
                 <ul>
-                    <li class=active><a href=/about>about.</a></li>
-                    <li class="dropdown">
-                        <a>portfolio.</a>
-                        <ul class="dropdown-menu">
-                            <li><a href="/art/">art.</a></li>
-                            <li><a href="/photography/">photography.</a></li>
-                        </ul>
-                    </li>
-                    <li><a href=/shop>shop.</a></li>
-                    <li><a href=/commissions>commissions.</a></li>
-                </ul>
+                    <ul>
+                        <li><a href=/about>about.</a></li>
+                        <li><a href=/commissions>commissions.</a></li>
+                        <li><a href=/shop>shop.</a></li>
+                        <li class="dropdown">
+                            <a>portfolio.</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/art/">art.</a></li>
+                                <li><a href="/photography/">photography.</a></li>
+                            </ul>
+                        </li>
+                    </ul>
             </nav>
         </div>
     </header>
@@ -58,18 +60,19 @@
         <footer id=fh5co-footer role=contentinfo>
             <div class=container-fluid>
                 <div class=footer-content>
-                    <div class=copyright><small>&copy; <span id="year"></span> - Brynn Monahan - All Rights Reserved.</small></br>
-                    <a href="mailto: contact@bybrynn.com">Contact me</a>
+                    <div class=copyright><small>&copy; <span id="year"></span> - Brynn Monahan - All Rights
+                            Reserved.</small></br>
+                        <a href="mailto: contact@bybrynn.com">Contact me</a>
+                    </div>
                 </div>
             </div>
-    </div>
-    </center>
+            </center>
         </footer>
-
-    <script>
-        document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel=stylesheet>
+        <script src=/jsrepo/touch_dropdown.js></script>
+        <script>
+            document.getElementById("year").textContent = new Date().getFullYear();
+        </script>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel=stylesheet>
 </body>
 
 </html>

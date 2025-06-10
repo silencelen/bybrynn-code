@@ -4,7 +4,6 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-<!-- PROJECT LOGO -->
 <br />
 <div align="center">
   <a href="https://github.com/silencelen/bybrynn-code">
@@ -34,56 +33,6 @@ Managing a website comes with its challenges, thats why we've institued the bybr
 Community review and feedback is heavily encouraged.
 <br/>
 <br/><br/>
-
-## Installation
-
-How can I access the repo?
-
-### Method 1: Universal
-
-Clone the repo
-
-```sh
-git clone https://github.com/silencelen/bybrynn-code
-```
-
-### Method 2: use ./clone command on local server (admin access required)
-
-issue clone script command
-
-```sh
-./clone
-```
-
-### Method 3: issue a direct transfer request
-
-Email dev with the specified folder paths and depth.
-
-```js
-webmaster@silencelen.com
-```
-
-<br/>
-
-## Roadmap
-
-- [x] Add home page
-- [x] Add about page
-- [x] Add shop page
-- [x] Add portfolio page
-- [x] Add art page
-- [x] Add single pages
-- [x] Add photography page
-- [ ] Add mobile specific version
-- [ ] Multi-language Support
-  - [ ] Chinese
-  - [ ] Spanish
-
-See the [open issues](https://github.com/silencelen/bybrynn-code/issues) for a full list of proposed features (and known issues).
-
-## License
-
-Distributed under no license, © 2023 - Brynn Monahan - All Rights Reserved.
 
 ## Contact
 

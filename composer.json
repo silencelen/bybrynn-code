@@ -1,0 +1,6 @@
+{
+    "require": {
+        "league/oauth2-client": "^2.8",
+        "stevenmaguire/oauth2-microsoft": "^2.2"
+    }
+}
