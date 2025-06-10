@@ -1,5 +1,4 @@
-﻿
-body {
+﻿body {
   font-family: libre baskerville, serif;
   line-height: 1.8;
   font-size: 16px;
@@ -10,7 +9,6 @@ body {
   color: #848484;
   font-weight: 300;
   overflow-x: hidden;
-  padding: 1;
 }
 
 a.fixed {
@@ -55,7 +53,6 @@ h6 {
   font-weight: 400;
   margin: 0 0 20px;
 }
-
 
 #fh5co-header {
   padding-top: 25px;
@@ -153,7 +150,6 @@ h6 {
 #fh5co-header nav ul li:hover .dropdown-menu {
   display: block;
 }
-
 
 @media (max-width: 468px) {
   body {
@@ -330,4 +326,3 @@ h6 {
     padding: 1;
   }
 }
-
