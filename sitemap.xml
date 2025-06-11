@@ -4,381 +4,373 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
 
 <url>
   <loc>https://bybrynn.com/</loc>
-  <lastmod>2024-10-08T08:49:38+00:00</lastmod>
+  <lastmod>2025-06-10T05:05:54+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://bybrynn.com/about/</loc>
-  <lastmod>2024-10-08T08:49:38+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/portfolio/</loc>
-  <lastmod>2024-10-08T08:49:40+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/shop/</loc>
-  <lastmod>2024-10-08T08:49:40+00:00</lastmod>
+  <lastmod>2025-06-10T05:05:38+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bybrynn.com/commissions/</loc>
-  <lastmod>2024-10-08T08:49:38+00:00</lastmod>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bybrynn.com/shop/</loc>
+  <lastmod>2025-06-10T05:05:56+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bybrynn.com/art/</loc>
-  <lastmod>2024-10-08T08:49:39+00:00</lastmod>
-  <priority>0.64</priority>
+  <lastmod>2025-06-11T07:18:08+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bybrynn.com/photography/</loc>
-  <lastmod>2024-10-08T08:49:40+00:00</lastmod>
-  <priority>0.64</priority>
+  <lastmod>2025-06-11T05:43:31+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>https://bybrynn.com/shop/revealingaheartbookmark/</loc>
-  <lastmod>2024-10-08T08:49:40+00:00</lastmod>
+  <lastmod>2025-06-10T05:05:57+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://bybrynn.com/shop/revealingaheartshirt/</loc>
-  <lastmod>2024-10-08T08:49:40+00:00</lastmod>
+  <lastmod>2025-06-10T05:05:57+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://bybrynn.com/shop/artistalways/</loc>
-  <lastmod>2024-10-08T08:49:40+00:00</lastmod>
+  <lastmod>2025-06-10T05:05:54+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://bybrynn.com/shop/greetings/</loc>
-  <lastmod>2024-10-08T08:49:40+00:00</lastmod>
+  <lastmod>2025-06-10T05:05:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://bybrynn.com/shop/3isthemagicnumber/</loc>
-  <lastmod>2024-10-08T08:49:40+00:00</lastmod>
+  <lastmod>2025-06-10T05:05:54+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://bybrynn.com/shop/3isthemagicnumber2/</loc>
-  <lastmod>2024-10-08T08:49:40+00:00</lastmod>
+  <lastmod>2025-06-10T05:05:54+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://bybrynn.com/shop/babydriver/</loc>
-  <lastmod>2024-10-08T08:49:40+00:00</lastmod>
+  <lastmod>2025-06-10T05:05:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://bybrynn.com/shop/babydriverquote/</loc>
-  <lastmod>2024-10-08T08:49:40+00:00</lastmod>
+  <lastmod>2025-06-10T05:05:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://bybrynn.com/shop/bridgerton/</loc>
-  <lastmod>2024-10-08T08:49:40+00:00</lastmod>
+  <lastmod>2025-06-10T05:05:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://bybrynn.com/shop/invisiblestring/</loc>
-  <lastmod>2024-10-08T08:49:40+00:00</lastmod>
+  <lastmod>2025-06-10T05:05:56+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://bybrynn.com/shop/invisiblestringpostcard/</loc>
-  <lastmod>2024-10-08T08:49:40+00:00</lastmod>
+  <lastmod>2025-06-10T05:05:56+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://bybrynn.com/shop/joandlaurie/</loc>
-  <lastmod>2024-10-08T08:49:40+00:00</lastmod>
+  <lastmod>2025-06-10T05:05:56+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://bybrynn.com/shop/louisamay/</loc>
-  <lastmod>2024-10-08T08:49:40+00:00</lastmod>
+  <lastmod>2025-06-10T05:05:56+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://bybrynn.com/shop/littlewomen/</loc>
-  <lastmod>2024-10-08T08:49:40+00:00</lastmod>
+  <lastmod>2025-06-10T05:05:56+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://bybrynn.com/shop/iloveyou/</loc>
-  <lastmod>2024-10-08T08:49:40+00:00</lastmod>
+  <lastmod>2025-06-10T05:05:55+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://bybrynn.com/shop/smileyface/</loc>
-  <lastmod>2024-10-08T08:49:40+00:00</lastmod>
+  <lastmod>2025-06-10T05:05:57+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://bybrynn.com/shop/tiptheartist/</loc>
-  <lastmod>2024-10-08T08:49:40+00:00</lastmod>
+  <lastmod>2025-06-10T05:05:57+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/harrysteyeles/</loc>
-  <lastmod>2024-10-08T08:49:39+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=harrysteyeles</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/ophelia/</loc>
-  <lastmod>2024-10-08T08:49:40+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=ophelia</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/inthegallery/</loc>
-  <lastmod>2024-10-08T08:49:39+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=inthegallery</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/bentley&amp;penelope/</loc>
-  <lastmod>2024-10-08T08:49:39+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=bentley-penelope</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/orlainorange/</loc>
-  <lastmod>2024-10-08T08:49:40+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=orlainorange</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/deborainthelaundromat/</loc>
-  <lastmod>2024-10-08T08:49:39+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=deborainthelaundromat</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/yelena/</loc>
-  <lastmod>2024-10-08T08:49:40+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=yelena</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/invisiblestring/</loc>
-  <lastmod>2024-10-08T08:49:39+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=invisiblestring</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/billiex2/</loc>
-  <lastmod>2024-10-08T08:49:39+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=billiex2</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/lookwhatyoumademedo/</loc>
-  <lastmod>2024-10-08T08:49:39+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=lookwhatyoumademedo</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/littlewomenbyjomarch/</loc>
-  <lastmod>2024-10-08T08:49:39+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=littlewomenbyjomarch</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/chadwickbozeman/</loc>
-  <lastmod>2024-10-08T08:49:39+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=chadwickbozeman</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/spideyx3/</loc>
-  <lastmod>2024-10-08T08:49:40+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=spideyx3</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/holdmyhand/</loc>
-  <lastmod>2024-10-08T08:49:39+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=holdmyhand</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/thisiswhatitfeelslike/</loc>
-  <lastmod>2024-10-08T08:49:40+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=thisiswhatitfeelslike</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/letlightbelight/</loc>
-  <lastmod>2024-10-08T08:49:39+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=letlightbelight</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/slotcanyonnv/</loc>
-  <lastmod>2024-10-08T08:49:40+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=slotcanyonnv</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/ella/</loc>
-  <lastmod>2024-10-08T08:49:39+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=ella</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/mady&amp;jonathan/</loc>
-  <lastmod>2024-10-08T08:49:39+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=mady-jonathan</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/coolgirl/</loc>
-  <lastmod>2024-10-08T08:49:39+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=coolgirl</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/apromiseofhopeisenoughtofeelfree/</loc>
-  <lastmod>2024-10-08T08:49:38+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=apromiseofhopeisenoughtofeelfree</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/grogu/</loc>
-  <lastmod>2024-10-08T08:49:39+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=grogu</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/latenightsocking/</loc>
-  <lastmod>2024-10-08T08:49:39+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=latenightsocking</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/midnights/</loc>
-  <lastmod>2024-10-08T08:49:39+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=midnights</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/myheart&amp;mylungs/</loc>
-  <lastmod>2024-10-08T08:49:40+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=myheart-mylungs</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/heartinmyhands/</loc>
-  <lastmod>2024-10-08T08:49:39+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=heartinmyhands</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/labyrinth/</loc>
-  <lastmod>2024-10-08T08:49:39+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=labyrinth</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/jess&amp;gabriel/</loc>
-  <lastmod>2024-10-08T08:49:39+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=jess-gabriel</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/getyourheadouttheground/</loc>
-  <lastmod>2024-10-08T08:49:39+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=getyourheadouttheground</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/pluto/</loc>
-  <lastmod>2024-10-08T08:49:40+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=pluto</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/kitschycatclock/</loc>
-  <lastmod>2024-10-08T08:49:39+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=kitschycatclock</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/jo&amp;laurie/</loc>
-  <lastmod>2024-10-08T08:49:39+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=jo-laurie</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/walkonthebeach/</loc>
-  <lastmod>2024-10-08T08:49:40+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=walkonthebeach</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/aquietlife/</loc>
-  <lastmod>2024-10-08T08:49:38+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=aquietlife</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/beforethekiss/</loc>
-  <lastmod>2024-10-08T08:49:39+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=beforethekiss</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/conan/</loc>
-  <lastmod>2024-10-08T08:49:39+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=conan</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/aconcertsixmonthsfromnow/</loc>
-  <lastmod>2024-10-08T08:49:38+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=aconcertsixmonthsfromnow</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/makenna/</loc>
-  <lastmod>2024-10-08T08:49:39+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=makenna</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/pinkyswear/</loc>
-  <lastmod>2024-10-08T08:49:40+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=pinkyswear</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/snowonthebeach/</loc>
-  <lastmod>2024-10-08T08:49:40+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=snowonthebeach</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/gracie/</loc>
-  <lastmod>2024-10-08T08:49:39+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=gracie</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/imamirrorball/</loc>
-  <lastmod>2024-10-08T08:49:39+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=imamirrorball</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/mirrorball/</loc>
-  <lastmod>2024-10-08T08:49:39+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=mirrorball</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/shiningjustforyou/</loc>
-  <lastmod>2024-10-08T08:49:40+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=shiningjustforyou</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/maisie/</loc>
-  <lastmod>2024-10-08T08:49:39+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=maisie</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/withtheflowers/</loc>
-  <lastmod>2024-10-08T08:49:40+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=withtheflowers</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/growntogether/</loc>
-  <lastmod>2024-10-08T08:49:39+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=growntogether</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/backstabbed/</loc>
-  <lastmod>2024-10-08T08:49:38+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=backstabbed</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/felinefamilyportrait/</loc>
-  <lastmod>2024-10-08T08:49:39+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://bybrynn.com/art/page.html?art=felinefamilyportrait</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://bybrynn.com/art/rosehillcottage/</loc>
-  <lastmod>2024-10-08T08:49:40+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://bybrynn.com/uhoh/</loc>
-  <lastmod>2024-10-08T08:49:40+00:00</lastmod>
-  <priority>0.41</priority>
+  <loc>https://bybrynn.com/art/page.html?art=rosehillcottage</loc>
+  <lastmod>2025-06-10T05:05:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
