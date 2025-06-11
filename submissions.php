@@ -311,7 +311,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           </div>
 
           <div class="inputbox">
-            <span class="label-text">High-res watermarked(.webp):</span>
+            <span class="label-text">High-res watermarked .webp photo:</span>
             <input type="file" name="highres" accept="image/webp">
           </div>
 

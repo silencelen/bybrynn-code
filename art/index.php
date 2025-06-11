@@ -161,7 +161,6 @@ foreach ($items as $item):
   </div>
 <?php endforeach; ?>
 </div>
-
     </div>
     <footer id=fh5co-footer role=contentinfo>
         <center>
