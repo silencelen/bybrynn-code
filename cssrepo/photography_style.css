@@ -99,7 +99,6 @@ figure {
   margin: 0;
 }
 #fh5co-header nav ul li {
-  margin: 0;
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
@@ -107,6 +106,7 @@ figure {
   list-style: none;
   font-size: 15px;
   top: 50%;
+  margin: 0;
 }
 #fh5co-header nav ul li a {
   color: #5c5c5c !important;
@@ -115,6 +115,7 @@ figure {
 @media screen and (max-width: 480px) {
   #fh5co-header nav ul li a {
     padding: 5px;
+    margin: 0 10px;
   }
 }
 #fh5co-header nav ul li a:hover,

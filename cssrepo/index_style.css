@@ -150,7 +150,12 @@ h6 {
 #fh5co-header nav ul li:hover .dropdown-menu {
   display: block;
 }
-
+@media screen and (max-width: 480px) {
+  #fh5co-header nav ul li a {
+    padding: 10px;
+    margin: 0 10px;
+  }
+}
 @media (max-width: 468px) {
   body {
     font-family: libre baskerville, serif;
