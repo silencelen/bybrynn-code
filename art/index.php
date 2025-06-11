@@ -146,7 +146,6 @@ $items = [
 
 ];
 
-// 2) Loop and render each thumbnail
 foreach ($items as $item):
     $origFs   = $_SERVER['DOCUMENT_ROOT'] . '/art/images/' . $item['slug'] . '.webp';
     $thumbUrl = get_thumb($origFs, 290);

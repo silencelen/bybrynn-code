@@ -95,7 +95,7 @@ function respond($msg) {
 logd('=== Script Start ===');
 
 $entriesFile = __DIR__ . '/art/entries.json';
-$indexFile   = __DIR__ . '/art/index.html';
+$indexFile   = __DIR__ . '/art/index.php';
 $imagesDir   = __DIR__ . '/art/images';
 
 if (!is_dir($imagesDir)) {
@@ -114,7 +114,7 @@ if (!is_readable($entriesFile) || !is_writable($entriesFile)) {
     respond('Error: entries.json not readable or writable.');
 }
 if (!file_exists($indexFile) || !is_writable($indexFile)) {
-    respond('Error: index.html missing or not writable.');
+    respond('Error: index.php missing or not writable.');
 }
 logd('Environment validated');
 
@@ -137,28 +137,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (!$slug) respond('Error: Invalid title for slug.');
         logd("Slug: $slug");
 
-        $subheading = "$medium - $dimensions - $year";
-        $metaTitle  = "Art byBrynn - $title - Portfolio works";
-        $onionUrl   = "http://artbybryndkmgb6ach4uqhrhsfkqbtcf3vrptfkljhclc3bxk74giwid.onion/T/art/$slug";
-
-        if (empty($_FILES['thumbnail']) || $_FILES['thumbnail']['error'] !== UPLOAD_ERR_OK) {
-            respond('Error: Thumbnail upload required.');
-        }
-        if ($_FILES['thumbnail']['type'] !== 'image/webp') {
-            respond('Error: Thumbnail must be .webp.');
-        }
-        $thumbName = "$slug-thumbnail.webp";
-        $thumbDest = "$imagesDir/$thumbName";
-        if (!move_uploaded_file($_FILES['thumbnail']['tmp_name'], $thumbDest)) {
-            respond('Error: Cannot save thumbnail.');
-        }
-        $thumbPath = "/art/images/$thumbName";
-        logd("Thumbnail saved: $thumbDest");
 
         $highresPath = '';
         if (!empty($_FILES['highres']) && $_FILES['highres']['error'] === UPLOAD_ERR_OK) {
             if ($_FILES['highres']['type'] === 'image/webp') {
-                $highName = "$slug-highres.webp";
+                $highName = "$slug.webp";
                 $highDest = "$imagesDir/$highName";
                 if (move_uploaded_file($_FILES['highres']['tmp_name'], $highDest)) {
                     $highresPath = "/art/images/$highName";
@@ -180,11 +163,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
         $newEntry = [
-            'subheading'  => $subheading,
-            'metaTitle'   => $metaTitle,
+            'subheading'  => "$medium - $dimensions - $year",
+            'metaTitle'   => "Art byBrynn - $title - Portfolio works",
             'title'       => $title,
             'description' => $description,
-            'onion'       => $onionUrl,
+            'onion'       => "http://artbybryndkmgb6ach4uqhrhsfkqbtcf3vrptfkljhclc3bxk74giwid.onion/T/art/$slug",
             'image'       => $highresPath,
             'prev'        => '',
             'next'        => ''
@@ -228,29 +211,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
         $html = file_get_contents($indexFile);
-        if ($html === false) respond('Error: Cannot read index.html');
+        if ($html === false) respond('Error: Cannot read index.php');
         $html = str_replace(["\r\n", "\r"], "\n", $html);
 
-        $marker = "        </div>\n    </div>\n    <footer id=fh5co-footer role=contentinfo>";
+        $marker = "];\n\nforeach (\$items as \$item):";
         $pos    = strpos($html, $marker);
         if ($pos === false) {
             respond('Error: Gallery closing marker not found.');
         }
 
-        $block  = "            <div class=\"fh5co-project masonry-brick\" data-date=\"$date\">\n";
-        $block .= "                <a href=\"page.html?art=$slug\">\n";
-        $block .= "                    <img src=\"$thumbPath\" loading=\"lazy\" alt=\"$slug\">\n";
-        $block .= "                </a>\n";
-        $block .= "            </div>\n";
+        $block = "['slug' => '$slug', 'date' => '$date'],\n";
 
         $newHtml = substr($html, 0, $pos)
                  . $block
                  . substr($html, $pos);
 
         if (file_put_contents($indexFile, str_replace("\n", PHP_EOL, $newHtml)) === false) {
-            respond('Error: Failed to update index.html');
+            respond('Error: Failed to update index.php');
         }
-        logd('Updated index.html');
+        logd('Updated index.php');
 
         header('Location: /art#bottom', true, 302);
         exit;
@@ -274,16 +253,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             position: fixed;
             right: 0;
             top: 0;
-            max-width: 60px
+            max-width: 60px;
         }
     </style>
-    <a class=fixed href=https://www.instagram.com/bybrynnm/ target=_blank><img src=/images/insta.png></a>
-
+    <a class=fixed href=https://www.instagram.com/bybrynnm/ target=_blank><img src=/images/insta.png alt="Instagram"></a>
 </head>
-
 <body>
-
-        <header id=fh5co-header role=banner>
+    <header id=fh5co-header role=banner>
         <div class="container text-center">
             <div id="fh5co-logo">
                 <a href="/"><img src="/images/logo.webp" alt="Home-Art_by_brynn"></a>
@@ -297,58 +273,52 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </ul>
             </nav>
         </div>
-        </br>
+        <br>
     </header>
     <center>
-    <h1>Submissions Portal</h1>
-    </br></br>
+        <h1>Submissions Portal</h1>
+        <br><br>
 
-<form class="art-form" method="post" enctype="multipart/form-data">
-  <div class="inputbox">
-    <span class="label-text">Title of the Artwork:</span>
-    <input type="text" name="title" placeholder="Exactly as it will appear" required>
-  </div>
+        <form class="art-form" method="post" enctype="multipart/form-data">
+          <div class="inputbox">
+            <span class="label-text">Title of the Artwork:</span>
+            <input type="text" name="title" placeholder="Exactly as it will appear" required>
+          </div>
 
-  <div class="inputbox">
-    <span class="label-text">Medium:</span>
-    <input type="text" name="medium" placeholder="Watercolor, pencil, etc" required>
-  </div>
+          <div class="inputbox">
+            <span class="label-text">Medium:</span>
+            <input type="text" name="medium" placeholder="Watercolor, pencil, etc" required>
+          </div>
 
-  <div class="inputbox">
-    <span class="label-text">Dimensions:</span>
-    <input type="text" name="dimensions" placeholder="'10x12in'" required>
-  </div>
+          <div class="inputbox">
+            <span class="label-text">Dimensions:</span>
+            <input type="text" name="dimensions" placeholder="10x12in" required>
+          </div>
 
-  <div class="inputbox">
-    <span class="label-text">Year Finished:</span>
-    <input type="text" name="year" placeholder="'20xx'" required>
-  </div>
+          <div class="inputbox">
+            <span class="label-text">Year Finished:</span>
+            <input type="text" name="year" placeholder="20xx" required>
+          </div>
 
-  <div class="inputbox">
-    <span class="label-text">Artwork description:</span>
-    <textarea name="description" placeholder="Accompanying Information below images"></textarea>
-  </div>
+          <div class="inputbox">
+            <span class="label-text">Artwork description:</span>
+            <textarea name="description" placeholder="Accompanying information below images"></textarea>
+          </div>
 
-  <div class="inputbox">
-    <span class="label-text">Current Date:</span>
-    <input type="date" name="date" value="<?php echo date('Y-m-d'); ?>">
-  </div>
+          <div class="inputbox">
+            <span class="label-text">Current Date:</span>
+            <input type="date" name="date" value="<?php echo date('Y-m-d'); ?>">
+          </div>
 
-  <div class="inputbox">
-    <span class="label-text">Thumbnail (.webp):</span>
-    <input type="file" name="thumbnail" accept="image/webp" required>
-  </div>
+          <div class="inputbox">
+            <span class="label-text">High-res watermarked(.webp):</span>
+            <input type="file" name="highres" accept="image/webp">
+          </div>
 
-  <div class="inputbox">
-    <span class="label-text">High-res (.webp):</span>
-    <input type="file" name="highres" accept="image/webp">
-  </div>
-
-  <div class="inputbox submitbox">
-    <button type="submit">Add Entry</button>
-  </div>
-</form>
-
+          <div class="inputbox submitbox">
+            <button type="submit">Add Entry</button>
+          </div>
+        </form>
     </center>
 </body>
 </html>
