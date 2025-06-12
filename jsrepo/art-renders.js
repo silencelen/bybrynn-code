@@ -20,6 +20,15 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("art-image").src = entry.image;
       document.getElementById("art-description").textContent = entry.description;
 
+      const secContainer = document.getElementById("secondary-image-container");
+      if (entry.secondary) {
+        const img = document.createElement('img');
+        img.src = entry.secondary;
+        img.alt = '';
+        img.loading = 'lazy';
+        secContainer.appendChild(img);
+      }
+
       document.getElementById("prev-link").href = `/art/page.html?art=${entry.prev}`;
       document.getElementById("next-link").href = `/art/page.html?art=${entry.next}`;
     });

@@ -90,7 +90,6 @@ require_once __DIR__ . '/../thumb.php';
         </div>
         <div id="fh5co-projects-feed" class="fh5co-projects-feed gallery clearfix" style="align-items: center;">
 <?php
-// 1) Build an array of your slugs + dates
 $items = [
 ['slug' => 'harrysteyeles', 'date' => '2020-11-30'],
 ['slug' => 'ophelia', 'date' => '2021-02-30'],
@@ -116,8 +115,8 @@ $items = [
 ['slug' => 'grogu', 'date' => '2020-04-19'],
 ['slug' => 'latenightsocking', 'date' => '2022-10-19'],
 ['slug' => 'midnights', 'date' => '2022-11-25'],
-['slug' => 'myheart-mylungs', 'date' => '2022-12-19'],
-['slug' => 'myheart-mylungs', 'date' => '2022-12-19'],
+['slug' => 'myheart', 'date' => '2022-12-19'],
+['slug' => 'mylungs', 'date' => '2022-12-19'],
 ['slug' => 'heartinmyhands', 'date' => '2023-01-19'],
 ['slug' => 'labyrinth', 'date' => '2023-02-19'],
 ['slug' => 'jess-gabriel', 'date' => '2023=02-19'],
