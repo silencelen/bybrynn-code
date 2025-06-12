@@ -150,6 +150,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
         }
 
+        $secondaryPath = '';
+        if (!empty($_FILES['secondary']) && $_FILES['secondary']['error'] === UPLOAD_ERR_OK) {
+            if ($_FILES['secondary']['type'] === 'image/webp') {
+                $secondaryName = "{$slug}-secondary.webp";
+                $secondaryDest = "{$imagesDir}/{$secondaryName}";
+                if (move_uploaded_file($_FILES['secondary']['tmp_name'], $secondaryDest)) {
+                    $secondaryPath = "/art/images/{$secondaryName}";
+                    logd("Secondary image saved: {$secondaryDest}");
+                }
+            }
+        }
+
         $raw = file_get_contents($entriesFile);
         if ($raw === false) respond('Error: Unable to read entries.json.');
         $decoded   = json_decode($raw, true);
@@ -169,6 +181,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             'description' => $description,
             'onion'       => "http://artbybryndkmgb6ach4uqhrhsfkqbtcf3vrptfkljhclc3bxk74giwid.onion/T/art/$slug",
             'image'       => $highresPath,
+            'secondary'   => $secondaryPath,
             'prev'        => '',
             'next'        => ''
         ];
@@ -315,10 +328,99 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <input type="file" name="highres" accept="image/webp">
           </div>
 
+          <div class="inputbox">
+            <span class="label-text">Secondary .webp image:</span>
+            <input type="file" name="secondary" accept="image/webp">
+          </div>
+
           <div class="inputbox submitbox">
             <button type="submit">Add Entry</button>
           </div>
         </form>
     </center>
 </body>
+</html>
+```
+
+---
+
+### Updated `page.html` (gallery template)
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title id="meta-title">Loading...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" id="meta-desc" content="">
+    <meta name="keywords" content="art, bybrynn, paintings, portfolio, ...">
+    <meta name="author" content="BrynnMonahan">
+    <meta http-equiv="onion-location" id="meta-onion" content="">
+    <link rel="icon" href="/images/icon.ico">
+    <link rel="stylesheet" href="/cssrepo/bootstrap.css">
+    <link rel="stylesheet" href="/cssrepo/art-ind_style.css">
+    <script src="/jsrepo/art-renders.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel=stylesheet>
+    <style>
+        a.fixed {
+            position: fixed;
+            right: 0;
+            top: 0;
+            max-width: 60px;
+        }
+    </style>
+    <a class="fixed" href="https://www.instagram.com/bybrynnm/" target="_blank"><img src="/images/insta.png"></a>
+
+</head>
+
+<body>
+    <header id="fh5co-header" role="banner">
+        <!-- header unchanged -->
+    </header>
+
+    <div class="page-content">
+        <center>
+            <h1 id="art-title" class="mb0">Loading...</h1>
+            <div class="meta" id="art-subheading"></div>
+            </br>
+            <p><img id="art-image" src="" alt="bybrynn"></p>
+            <p id="art-description"></p>
+            <!-- Placeholder for secondary image -->
+            <p id="secondary-image-container"></p>
+            <p>
+                <a id="prev-link"><button type="button">Previous</button></a> -
+                <a id="next-link"><button type="button">Next</button></a>
+            </p>
+        </center>
+    </div>
+
+    <footer id="fh5co-footer" role="contentinfo">
+        <!-- footer unchanged -->
+    </footer>
+    <script src="/jsrepo/touch_dropdown.js"></script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <!-- New inline script to show secondary image if it exists -->
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const params = new URLSearchParams(window.location.search);
+        const slug = params.get('art');
+        if (slug) {
+            const secondaryImg = new Image();
+            secondaryImg.src = `/art/images/${slug}-secondary.webp`;
+            secondaryImg.alt = '';
+            secondaryImg.loading = 'lazy';
+            secondaryImg.onload = () => {
+                const container = document.getElementById('secondary-image-container');
+                const paragraph = document.createElement('p');
+                paragraph.appendChild(secondaryImg);
+                container.replaceWith(paragraph);
+            };
+        }
+    });
+    </script>
+</body>
+
 </html>

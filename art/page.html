@@ -19,7 +19,7 @@
             position: fixed;
             right: 0;
             top: 0;
-            max-width: 60px
+            max-width: 60px;
         }
     </style>
     <a class=fixed href=https://www.instagram.com/bybrynnm/ target=_blank><img src=/images/insta.png></a>
@@ -56,6 +56,7 @@
             </br>
             <p><img id="art-image" src="" alt="bybrynn"></p>
             <p id="art-description"></p>
+            <p id="secondary-image-container"></p>
             <p>
                 <a id="prev-link"><button type="button">Previous</button></a> -
                 <a id="next-link"><button type="button">Next</button></a>
@@ -75,6 +76,24 @@
     <script>
 
         document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const params = new URLSearchParams(window.location.search);
+            const slug = params.get('art');
+            if (slug) {
+                const secondaryImg = new Image();
+                secondaryImg.src = `/art/images/${slug}-secondary.webp`;
+                secondaryImg.alt = '';
+                secondaryImg.loading = 'lazy';
+                secondaryImg.onload = () => {
+                    const container = document.getElementById('secondary-image-container');
+                    const paragraph = document.createElement('p');
+                    paragraph.appendChild(secondaryImg);
+                    container.replaceWith(paragraph);
+                };
+            }
+        });
     </script>
 </body>
 
