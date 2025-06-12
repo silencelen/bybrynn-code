@@ -23,7 +23,24 @@
         }
     </style>
     <a class=fixed href=https://www.instagram.com/bybrynnm/ target=_blank><img src=/images/insta.png></a>
-
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const params = new URLSearchParams(window.location.search);
+            const slug = params.get('art');
+            if (slug) {
+                const secondaryImg = new Image();
+                secondaryImg.src = `/art/images/${slug}-secondary.webp`;
+                secondaryImg.alt = '';
+                secondaryImg.loading = 'lazy';
+                secondaryImg.onload = () => {
+                    const container = document.getElementById('secondary-image-container');
+                    const paragraph = document.createElement('p');
+                    paragraph.appendChild(secondaryImg);
+                    container.replaceWith(paragraph);
+                };
+            }
+        });
+    </script>
 </head>
 
 <body>
@@ -76,24 +93,6 @@
     <script>
 
         document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const params = new URLSearchParams(window.location.search);
-            const slug = params.get('art');
-            if (slug) {
-                const secondaryImg = new Image();
-                secondaryImg.src = `/art/images/${slug}-secondary.webp`;
-                secondaryImg.alt = '';
-                secondaryImg.loading = 'lazy';
-                secondaryImg.onload = () => {
-                    const container = document.getElementById('secondary-image-container');
-                    const paragraph = document.createElement('p');
-                    paragraph.appendChild(secondaryImg);
-                    container.replaceWith(paragraph);
-                };
-            }
-        });
     </script>
 </body>
 
