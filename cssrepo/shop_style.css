@@ -19,9 +19,6 @@ body.fh5co-offcanvas {
   position: relative;
   display: inline-block;
 }
-#fh5co-header nav ul li.dropdown > a {
-  text-decoration: underline;
-}
 
 #fh5co-logo a {
   padding-top: 25px;
