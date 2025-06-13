@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!artId) return;
 
-  fetch("/art/entries.json")
+  fetch(`/art/entries.json?cb=${Date.now()}`)
     .then(response => response.json())
     .then(data => {
       const entry = data[artId];
