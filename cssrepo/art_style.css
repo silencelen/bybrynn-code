@@ -140,7 +140,6 @@ div#fh5co-projects-feed {
 
 .fh5co-projects-feed .fh5co-project {
   display: inline-block;
-
   margin: 13px 10px 0px;
   width: 290px;
 }
@@ -157,7 +156,6 @@ div#fh5co-projects-feed {
   pointer-events: none;
   max-width: 100%;
   width: 100%;
-
   padding: 7px;
 }
 .fh5co-projects-feed .fh5co-project > a h2 {
@@ -238,7 +236,7 @@ div#fh5co-projects-feed {
   padding-bottom: 20px;
   text-align: center;
   color: #494949;
-  position: abosolute;
+  position: absolute;
 }
 #fh5co-footer a {
   color: #5c5c5c;
@@ -399,16 +397,11 @@ div#fh5co-projects-feed {
 }
 @media (max-width: 800px) {
   .gallery {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
     column-count: 2;
-
-    -webkit-column-gap: 20px;
-    -moz-column-gap: 20px;
     column-gap: 20px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 639px) {
   .gallery {
     -webkit-column-count: 1;
     -moz-column-count: 1;
@@ -493,7 +486,6 @@ div#fh5co-projects-feed {
 .fh5co-project {
   width: calc(25% - 20px);
   margin: 10px;
-  margin-bottom: 0;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -506,6 +498,18 @@ div#fh5co-projects-feed {
   padding: 0 4px;
   border-radius: 10px;
   object-fit: cover;
+}
+
+@media (max-width: 639px) {
+  #fh5co-projects-feed {
+    flex-direction: column;
+    align-items: center;
+  }
+  #fh5co-projects-feed .fh5co-project {
+    width: 100%;
+    max-width: 290px;
+    margin: 10px 0;
+  }
 }
 
 .grid {
@@ -541,7 +545,7 @@ div#fh5co-projects-feed {
   }
 
   .grid li {
-    --row-step: calc(4 * var(--n));
+    --row-step: calc(4 \* var(--n));
   }
 
   .grid li:nth-child(11n + 1) {

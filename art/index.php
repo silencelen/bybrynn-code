@@ -32,10 +32,9 @@ require_once __DIR__ . '/../thumb.php';
             max-width: 60px
         }
     </style>
-    <a class=fixed href=https://www.instagram.com/bybrynnm/ target=_blank><img src=/images/insta.png></a>
-</head>
-
+</head> 
 <body>
+      <a class=fixed href=https://www.instagram.com/bybrynnm/ target=_blank><img src=/images/insta.png></a>  
     <header id=fh5co-header role=banner>
         <div class="container text-center">
             <div id="fh5co-logo">
