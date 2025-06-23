@@ -510,5 +510,17 @@
                             "image":  "/art/images/rosehillcottage.webp",
                             "prev":  "felinefamilyportrait",
                             "next":  ""
-                        }
+                        },
+    "christineetlefantme": {
+        "subheading": "acrylic on glass - 11x17in - 2025",
+        "metaTitle": "Art byBrynn - Christine et Le Fant\u00f4me - Portfolio works",
+        "title": "Christine et Le Fant\u00f4me",
+        "description": "\u201cIn sleep he sang to me, in dreams he came,\r\nThat voice which calls to me and speaks my name.\r\nAnd do I dream again? For now I find\r\nThe Phantom of the Opera is there, inside my mind.\"\r\n- Andrew Lloyd Webber\r\n\r\nA painting of a still from the film adaption of The Phantom of the Opera (2004), where The Phantom first takes Christine Daa\u00e9\u2019s hand as he coerces her to his lair.\r\nBehind the pane of glass on which the hands are painted is a tinted faux mirror which has been shattered; alluding to the multiple significant moments in the film where mirrors are broken, as well as symbolizing the inherently corrupt nature of their relationship.",
+        "onion": "http://artbybryndkmgb6ach4uqhrhsfkqbtcf3vrptfkljhclc3bxk74giwid.onion/T/art/christineetlefantme",
+        "image": "/art/images/christineetlefantme.webp",
+        "secondary": "/art/images/christineetlefantme-secondary.webp",
+        "prev": "",
+        "next": ""
+    }
+
 }

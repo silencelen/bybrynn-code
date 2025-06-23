@@ -142,7 +142,7 @@ $items = [
 ['slug' => 'backstabbed', 'date' => '2023-11-31'],
 ['slug' => 'felinefamilyportrait', 'date' => '2024-01-15'],
 ['slug' => 'rosehillcottage', 'date' => '2023-12-15'],
-
+['slug' => 'christineetlefantme', 'date' => '2025-06-23'],
 ];
 
 foreach ($items as $item):
