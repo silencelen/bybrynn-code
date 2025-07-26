@@ -13,7 +13,7 @@
   <h3 align="center">Bybrynn-code</h3>
 
   <p align="center">
-    The offical repo for the active html/css structure of bybrynn.com
+    The official repo for the active html/css structure of bybrynn.com
     <br />
     <a href="https://github.com/silencelen/bybrynn-code"><strong>Explore the docs »</strong></a>
     <br />
