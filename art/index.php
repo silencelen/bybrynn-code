@@ -183,6 +183,7 @@ foreach ($items as $item):
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <script src="/jsrepo/pageTransitions.js"></script>
 </body>
 
 </html>

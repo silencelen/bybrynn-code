@@ -339,5 +339,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           </div>
         </form>
     </center>
+    <script src="/jsrepo/pageTransitions.js"></script>
 </body>
 </html>
