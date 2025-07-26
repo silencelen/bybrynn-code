@@ -28,7 +28,7 @@
 
 ## About The Project
 
-Managing a website comes with its challenges, thats why we've institued the bybrynn.com public repo. In an attempt to streamline progress and collaboration, the complete source structure is online for review.
+Managing a website comes with its challenges, that’s why we've instituted the bybrynn.com public repo. In an attempt to streamline progress and collaboration, the complete source structure is online for review.
 
 Community review and feedback is heavily encouraged.
 <br/>
