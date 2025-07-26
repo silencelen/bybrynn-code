@@ -1,0 +1,66 @@
+/* Common site-wide styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #212121;
+  font-family: "Libre Baskerville", Arial, serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+}
+
+p,
+ul,
+ol {
+  margin-bottom: 1.5em;
+  font-size: 15px;
+  color: #5c5c5c;
+  font-family: "Libre Baskerville", Arial, serif;
+}
+
+#fh5co-header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#fh5co-header nav ul li {
+  position: relative;
+}
+
+#fh5co-header nav ul li a {
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  color: #5c5c5c !important;
+}
+
+#fh5co-header nav ul li .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  z-index: 1000;
+  opacity: 90%;
+}
+
+#fh5co-header nav ul li:hover .dropdown-menu {
+  display: block;
+}
+
+#fh5co-footer a {
+  color: #5c5c5c;
+}
+
+#fh5co-footer a:hover,
+#fh5co-footer a:active,
+#fh5co-footer a:focus {
+  color: #000 !important;
+}

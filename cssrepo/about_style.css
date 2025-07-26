@@ -120,25 +120,8 @@ a:focus {
   color: #5c5c5c;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #212121;
-  font-family: "Libre Baskerville", Arial, serif;
-  font-weight: 400;
-  margin: 0 0 20px 0;
-}
-p,
-ul,
-ol {
-  margin-bottom: 1.5em;
-  font-size: 15px;
-  color: #5c5c5c;
-  font-family: "Libre Baskerville", Arial, serif;
-}
+
+
 
 #fh5co-footer {
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
