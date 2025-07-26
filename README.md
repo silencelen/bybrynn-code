@@ -13,7 +13,7 @@
   <h3 align="center">Bybrynn-code</h3>
 
   <p align="center">
-    The offical repo for the active html/css structure of bybrynn.com
+    The official repo for the active html/css structure of bybrynn.com
     <br />
     <a href="https://github.com/silencelen/bybrynn-code"><strong>Explore the docs »</strong></a>
     <br />
@@ -28,7 +28,7 @@
 
 ## About The Project
 
-Managing a website comes with its challenges, thats why we've institued the bybrynn.com public repo. In an attempt to streamline progress and collaboration, the complete source structure is online for review.
+Managing a website comes with its challenges, that’s why we've instituted the bybrynn.com public repo. In an attempt to streamline progress and collaboration, the complete source structure is online for review.
 
 Community review and feedback is heavily encouraged.
 <br/>

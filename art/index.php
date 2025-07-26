@@ -118,7 +118,7 @@ $items = [
 ['slug' => 'mylungs', 'date' => '2022-12-19'],
 ['slug' => 'heartinmyhands', 'date' => '2023-01-19'],
 ['slug' => 'labyrinth', 'date' => '2023-02-19'],
-['slug' => 'jess-gabriel', 'date' => '2023=02-19'],
+['slug' => 'jess-gabriel', 'date' => '2023-02-19'],
 ['slug' => 'getyourheadouttheground', 'date' => '2023-03-17'],
 ['slug' => 'pluto', 'date' => '2020-10-17'],
 ['slug' => 'kitschycatclock', 'date' => '2022-08-25'],
