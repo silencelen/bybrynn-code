@@ -331,3 +331,6 @@ h6 {
     padding: 1;
   }
 }
+
+.page-fade{opacity:0;transition:opacity 0.5s ease-in-out;}
+body.page-loaded .page-fade{opacity:1;}
