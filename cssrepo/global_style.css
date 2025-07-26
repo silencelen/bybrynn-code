@@ -32,6 +32,19 @@ ol {
   font-family: "Libre Baskerville", Arial, serif;
 }
 
+::selection {
+  color: #fcfcfc;
+  background: #5e8fbb;
+}
+
+a:active,
+a:focus {
+  outline: none;
+}
+
+
+/* header */
+
 #fh5co-logo a {
   padding-top: 25px;
   padding-bottom: 40px;
@@ -142,13 +155,4 @@ ol {
   list-style-type: none;
   z-index: 1000;
   opacity: 90%;
-}
-::selection {
-  color: #fcfcfc;
-  background: #5e8fbb;
-}
-
-a:active,
-a:focus {
-  outline: none;
 }
