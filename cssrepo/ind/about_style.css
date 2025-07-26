@@ -5,19 +5,6 @@ a.fixed {
   max-width: 60px;
 }
 
-body {
-  font-family: "Libre Baskerville", serif;
-  line-height: 1.8;
-  font-size: 16px;
-  background: url(/images/background.webp), #f6f2ec;
-  background-size: 100% auto;
-  background-repeat: repeat-y;
-  background-position: top center;
-  color: #848484;
-  font-weight: 300;
-  overflow-x: hidden;
-}
-
 a {
   color: #5e8fbb;
   transition: 0.5s;
@@ -26,60 +13,6 @@ a:hover {
   text-decoration: none !important;
   color: #5e8fbb !important;
 }
-
-
-#fh5co-logo a {
-  padding-top: 25px;
-  padding-bottom: 40px;
-}
-#fh5co-header {
-  padding-top: 25px;
-  margin-bottom: 30px;
-}
-
-
-#fh5co-header nav {
-  padding-top: 20px;
-  text-align: center;
-}
-#fh5co-header nav ul {
-  padding: 0;
-  margin: 0;
-}
-#fh5co-header nav ul li {
-  position: relative;
-  display: inline-block;
-  list-style: none;
-  font-size: 15px;
-  padding: 10px;
-}
-
-#fh5co-header nav ul li a:hover,
-#fh5co-header nav ul li a:active,
-#fh5co-header nav ul li a:focus {
-  color: #000 !important;
-  text-decoration: none;
-  outline: none;
-}
-
-
-#fh5co-header nav ul li .dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: white;
-  z-index: 1000;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  opacity: 90%;
-  width: max-content;
-}
-
-
-
 
 .page-content {
   margin: 0 auto;
@@ -137,19 +70,5 @@ a:hover {
   .page-content {
     padding-left: 15px;
     padding-right: 15px;
-  }
-
-  #fh5co-header nav ul {
-    text-align: center;
-    display: inline-block;
-  }
-  #fh5co-header nav ul li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-  #fh5co-header nav ul li .dropdown-menu {
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
   }
 }

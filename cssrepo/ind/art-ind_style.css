@@ -10,25 +10,8 @@
   font-style: normal;
 }
 
-body {
-  font-family: "Libre Baskerville", serif;
-  line-height: 1.8;
-  font-size: 16px;
-  background: url(/images/background.webp), #f6f2ec;
-  background-size: 100% auto;
-  background-repeat: repeat-y;
-  background-position: top center;
-  color: #848484;
-  font-weight: 300;
-  overflow-x: hidden;
-}
 body.fh5co-offcanvas {
   overflow: hidden;
-}
-
-#fh5co-logo a {
-  padding-top: 25px;
-  padding-bottom: 40px;
 }
 
 a {
@@ -60,46 +43,6 @@ figure {
   color: #fcfcfc;
   background: #5e8fbb;
 }
-
-
-
-#fh5co-header {
-  padding-top: 25px;
-  margin-bottom: 30px;
-}
-
-#fh5co-header nav {
-  padding-top: 20px;
-}
-#fh5co-header nav ul {
-  padding: 0;
-  margin: 0;
-}
-#fh5co-header nav ul li {
-  margin: 0;
-  display: -moz-inline-stack;
-  display: inline-block;
-  zoom: 1;
-  *display: inline;
-  list-style: none;
-  font-size: 15px;
-  top: 50%;
-}
-
-@media screen and (max-width: 480px) {
-  #fh5co-header nav ul li a {
-    padding: 5px;
-    margin: 0 10px;
-  }
-}
-#fh5co-header nav ul li a:hover,
-#fh5co-header nav ul li a:active,
-#fh5co-header nav ul li a:focus {
-  color: #000 !important;
-  text-decoration: none;
-  outline: none;
-}
-
 
 .fh5co-projects-feed,
 .footer-content {
@@ -248,37 +191,9 @@ figure {
   }
 }
 
-#fh5co-header nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+#fh5co-header nav ul li.dropdown > a {
+  text-decoration: underline;
 }
-
-#fh5co-header nav ul li {
-  position: relative;
-}
-
-#fh5co-header nav ul li a {
-  text-decoration: none;
-  padding: 10px 20px;
-  display: block;
-  color: #5c5c5c !important;
-}
-
-#fh5co-header nav ul li .dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: white;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  z-index: 1000;
-  opacity: 90%;
-}
-
 
 
 
