@@ -34,7 +34,7 @@ require_once __DIR__ . '/../thumb.php';
         }
     </style>
 </head> 
-<body>
+<body class="fade">
       <a class=fixed href=https://www.instagram.com/bybrynnm/ target=_blank><img src=/images/insta.png></a>  
     <header id=fh5co-header role=banner>
         <div class="container text-center">
@@ -183,6 +183,7 @@ foreach ($items as $item):
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.jsdelivr.net/isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <script src="/jsrepo/fade.js"></script>
 </body>
 
 </html>

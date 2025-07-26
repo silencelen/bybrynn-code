@@ -272,7 +272,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </style>
     <a class=fixed href=https://www.instagram.com/bybrynnm/ target=_blank><img src=/images/insta.png alt="Instagram"></a>
 </head>
-<body>
+<body class="fade">
     <header id=fh5co-header role=banner>
         <div class="container text-center">
             <div id="fh5co-logo">
@@ -339,5 +339,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           </div>
         </form>
     </center>
+    <script src="/jsrepo/fade.js"></script>
 </body>
 </html>
