@@ -43,26 +43,9 @@ a:focus {
   outline: none;
 }
 
-p,
-ul,
-ol {
-  margin-bottom: 1.5em;
-  font-size: 15px;
-  color: #5c5c5c;
-  font-family: "Libre Baskerville", Arial, serif;
-}
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #212121;
-  font-family: "Libre Baskerville", Arial, serif;
-  font-weight: 400;
-  margin: 0 0 20px 0;
-}
+
+
 
 figure {
   margin-bottom: 2em;
