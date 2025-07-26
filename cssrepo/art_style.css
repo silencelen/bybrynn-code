@@ -38,10 +38,7 @@ a:hover {
   text-decoration: none !important;
   color: #8c8c8d !important;
 }
-a:active,
-a:focus {
-  outline: none;
-}
+
 
 
 
@@ -61,19 +58,13 @@ figure {
   background: #5e8fbb;
 }
 
-::selection {
-  color: #fcfcfc;
-  background: #5e8fbb;
-}
+
 
 #fh5co-header {
   padding-top: 25px;
   margin-bottom: 30px;
 }
-#fh5co-header #fh5co-logo img {
-  max-width: 125px;
-  pointer-events: none;
-}
+
 #fh5co-header nav {
   padding-top: 20px;
 }
@@ -91,10 +82,7 @@ figure {
   top: 50%;
   margin: 0;
 }
-#fh5co-header nav ul li a {
-  color: #5c5c5c !important;
-  padding: 10px;
-}
+
 @media screen and (max-width: 480px) {
   #fh5co-header nav ul li a {
     padding: 5px;
@@ -108,10 +96,7 @@ figure {
   text-decoration: none;
   outline: none;
 }
-#fh5co-header nav ul li.active a {
-  text-decoration: underline !important;
-  color: black !important;
-}
+
 div#fh5co-projects-feed {
   text-align: center;
 }
@@ -221,14 +206,8 @@ div#fh5co-projects-feed {
   color: #494949;
   position: absolute;
 }
-#fh5co-footer a {
-  color: #5c5c5c;
-}
-#fh5co-footer a:hover,
-#fh5co-footer a:active,
-#fh5co-footer a:focus {
-  color: #000 !important;
-}
+
+
 #fh5co-footer .social {
   margin-top: 20px;
 }
@@ -635,16 +614,8 @@ div#fh5co-projects-feed {
   opacity: 90%;
 }
 
-#fh5co-header nav ul li .dropdown-menu li {
-  display: block;
-}
 
-#fh5co-header nav ul li .dropdown-menu li a {
-  padding: 10px 20px;
-  white-space: nowrap;
-  color: #5c5c5c !important;
-}
 
-#fh5co-header nav ul li:hover .dropdown-menu {
-  display: block;
-}
+
+
+

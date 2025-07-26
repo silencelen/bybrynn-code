@@ -23,19 +23,13 @@ a:hover {
   color: #5e8fbb !important;
 }
 
-a:active,
-a:focus {
-  outline: none;
-}
 
 
 
 
 
-::selection {
-  color: #fcfcfc;
-  background: #5e8fbb;
-}
+
+
 
 #special {
   display: block;
@@ -64,10 +58,7 @@ a:focus {
   padding-bottom: 40px;
 }
 
-#fh5co-header #fh5co-logo img {
-  max-width: 125px;
-  pointer-events: none;
-}
+
 
 #fh5co-header nav {
   padding-top: 20px;
@@ -88,10 +79,7 @@ a:focus {
   padding: 10px;
 }
 
-#fh5co-header nav ul li a {
-  color: #5c5c5c !important;
-  padding: 10px;
-}
+
 
 #fh5co-header nav ul li a:hover,
 #fh5co-header nav ul li a:active,
@@ -101,10 +89,7 @@ a:focus {
   outline: none;
 }
 
-#fh5co-header nav ul li.active a {
-  text-decoration: underline !important;
-  color: black !important;
-}
+
 
 #fh5co-header nav ul li .dropdown-menu {
   display: none;
@@ -121,19 +106,11 @@ a:focus {
   width: max-content;
 }
 
-#fh5co-header nav ul li .dropdown-menu li {
-  display: block;
-}
 
-#fh5co-header nav ul li .dropdown-menu li a {
-  padding: 10px 20px;
-  white-space: nowrap;
-  color: #5c5c5c !important;
-}
 
-#fh5co-header nav ul li:hover .dropdown-menu {
-  display: block;
-}
+
+
+
 
 div#fh5co-projects-feed {
   text-align: center;
@@ -229,15 +206,9 @@ div#fh5co-projects-feed {
   position: absolute;
 }
 
-#fh5co-footer a {
-  color: #5c5c5c;
-}
 
-#fh5co-footer a:hover,
-#fh5co-footer a:active,
-#fh5co-footer a:focus {
-  color: #000 !important;
-}
+
+
 
 .square {
   list-style: square;
