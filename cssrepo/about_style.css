@@ -26,10 +26,7 @@ a:hover {
   text-decoration: none !important;
   color: #5e8fbb !important;
 }
-a:active,
-a:focus {
-  outline: none;
-}
+
 
 #fh5co-logo a {
   padding-top: 25px;
@@ -39,10 +36,7 @@ a:focus {
   padding-top: 25px;
   margin-bottom: 30px;
 }
-#fh5co-header #fh5co-logo img {
-  max-width: 125px;
-  pointer-events: none;
-}
+
 
 #fh5co-header nav {
   padding-top: 20px;
@@ -59,10 +53,7 @@ a:focus {
   font-size: 15px;
   padding: 10px;
 }
-#fh5co-header nav ul li a {
-  color: #5c5c5c !important;
-  padding: 10px;
-}
+
 #fh5co-header nav ul li a:hover,
 #fh5co-header nav ul li a:active,
 #fh5co-header nav ul li a:focus {
@@ -70,10 +61,7 @@ a:focus {
   text-decoration: none;
   outline: none;
 }
-#fh5co-header nav ul li.active a {
-  text-decoration: underline !important;
-  color: black !important;
-}
+
 
 #fh5co-header nav ul li .dropdown-menu {
   display: none;
@@ -89,17 +77,9 @@ a:focus {
   opacity: 90%;
   width: max-content;
 }
-#fh5co-header nav ul li .dropdown-menu li {
-  display: block;
-}
-#fh5co-header nav ul li .dropdown-menu li a {
-  padding: 10px 20px;
-  white-space: nowrap;
-  color: #5c5c5c !important;
-}
-#fh5co-header nav ul li:hover .dropdown-menu {
-  display: block;
-}
+
+
+
 
 .page-content {
   margin: 0 auto;
@@ -133,14 +113,8 @@ a:focus {
   color: #494949;
   position: absolute;
 }
-#fh5co-footer a {
-  color: #5c5c5c;
-}
-#fh5co-footer a:hover,
-#fh5co-footer a:active,
-#fh5co-footer a:focus {
-  color: #000 !important;
-}
+
+
 
 ::-webkit-selection {
   color: #fcfcfc;
@@ -150,10 +124,7 @@ a:focus {
   color: #fcfcfc;
   background: #5e8fbb;
 }
-::selection {
-  color: #fcfcfc;
-  background: #5e8fbb;
-}
+
 
 @media screen and (max-width: 480px) {
   .page-content {
