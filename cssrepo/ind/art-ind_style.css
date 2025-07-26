@@ -139,36 +139,6 @@ figure {
   }
 }
 
-#fh5co-footer {
-  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
-  float: left;
-  width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  text-align: center;
-  color: #494949;
-  position: abosolute;
-}
-
-
-#fh5co-footer .social {
-  margin-top: 20px;
-}
-#fh5co-footer .social a {
-  padding: 10px;
-  color: #999999 !important;
-}
-@media screen and (max-width: 480px) {
-  #fh5co-footer .social a {
-    padding: 5px;
-  }
-}
-#fh5co-footer .social a:hover,
-#fh5co-footer .social a:active,
-#fh5co-footer .social a:focus {
-  color: #000 !important;
-}
-
 .square {
   list-style: square;
 }
