@@ -168,3 +168,5 @@ a:focus {
   color: #494949;
   position: absolute;
 }
+body.fade{opacity:0;transition:opacity 0.5s ease-in-out;}
+body.fade.page-loaded{opacity:1;}
