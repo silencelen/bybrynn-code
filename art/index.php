@@ -21,9 +21,9 @@ require_once __DIR__ . '/../thumb.php';
     <link rel=icon href=/images/icon.ico>
     <link rel=preconnect href=https://fonts.googleapis.com>
     <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
-    <link rel=stylesheet href=/cssrepo/bootstrap.css>
+    <link rel=stylesheet href=/cssrepo/bootstraps/bootstrap.css>
     <link rel="stylesheet" href="/cssrepo/global_style.css">
-    <link rel=stylesheet href=/cssrepo/art_style.css>
+    <link rel=stylesheet href=/cssrepo/ind/art_style.css>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel=stylesheet>
     <style>
         a.fixed {

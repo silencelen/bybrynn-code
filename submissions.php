@@ -258,10 +258,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="utf-8">
     <title>Submission Portal</title>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel=stylesheet>
-    <link rel=stylesheet href=/cssrepo/bootstrap.css>
+    <link rel=stylesheet href=/cssrepo/bootstraps/bootstrap.css>
     <link rel="stylesheet" href="/cssrepo/global_style.css">
-    <link rel=stylesheet href=/cssrepo/about_style.css>    
-    <link rel=stylesheet href=/cssrepo/submissions_style.css>
+    <link rel=stylesheet href=/cssrepo/ind/about_style.css>    
+    <link rel=stylesheet href=/cssrepo/ind/submissions_style.css>
     <style>
         a.fixed {
             position: fixed;
