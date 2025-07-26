@@ -14,8 +14,10 @@
     <link rel="icon" href="/images/iconbig.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="/cssrepo/home_style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" media="all" rel="stylesheet">
+    <link rel="preload" href="/cssrepo/home_style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/cssrepo/home_style.css"></noscript>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin>
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet"></noscript>
     <style>
         .logo-image {
             width: 190px;
@@ -30,7 +32,7 @@
             <nav>
                 <ul>
                     <h1>
-                        <img src="images/logoold.png" alt="Logo Old" class="logo-image">
+                        <img src="images/logoold.png" alt="Logo Old" class="logo-image" loading="lazy">
                     </h1>
                     <li><a href="/about">about.</a></li>
                     <li><a href="/commissions">commissions.</a></li>
@@ -58,12 +60,10 @@
         </div>
     </footer>
 
-    <script>
-        document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-    <script src=/jsrepo/touch_dropdown.js></script>
-    <script>fetch('uhoh/js/flag.txt');</script>
-    <script src="/jsrepo/fade.js"></script>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+    <script src="/jsrepo/touch_dropdown.js" defer></script>
+    <script>window.addEventListener('load',function(){fetch('uhoh/js/flag.txt');});</script>
+    <script src="/jsrepo/fade.js" defer></script>
 </body>
 
 </html>
