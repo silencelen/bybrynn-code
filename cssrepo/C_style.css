@@ -23,19 +23,11 @@ a:hover {
   color: #5e8fbb !important;
 }
 
-a:active,
-a:focus {
-  outline: none;
-}
 
 
 
 
 
-::selection {
-  color: #fcfcfc;
-  background: #5e8fbb;
-}
 
 #special {
   display: block;

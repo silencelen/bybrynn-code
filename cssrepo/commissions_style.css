@@ -19,10 +19,6 @@ a:hover {
   text-decoration: none !important;
   color: #5e8fbb !important;
 }
-a:active,
-a:focus {
-  outline: none;
-}
 
 a.fixed {
   position: fixed;
@@ -35,10 +31,6 @@ a.fixed {
 
 
 
-::selection {
-  color: #fcfcfc;
-  background: #5e8fbb;
-}
 
 #special {
   display: block;

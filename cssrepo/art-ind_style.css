@@ -41,10 +41,6 @@ a:hover {
   text-decoration: none !important;
   color: #5e8fbb !important;
 }
-a:active,
-a:focus {
-  outline: none;
-}
 
 
 
@@ -64,10 +60,6 @@ figure {
   background: #5e8fbb;
 }
 
-::selection {
-  color: #fcfcfc;
-  background: #5e8fbb;
-}
 
 #fh5co-header {
   padding-top: 25px;

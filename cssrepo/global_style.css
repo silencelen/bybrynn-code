@@ -19,3 +19,13 @@ ol {
   color: #5c5c5c;
   font-family: "Libre Baskerville", Arial, serif;
 }
+/* Common interactive elements */
+a:active,
+a:focus {
+  outline: none;
+}
+
+::selection {
+  color: #fcfcfc;
+  background: #5e8fbb;
+}
