@@ -12,6 +12,11 @@ require_once __DIR__ . '/../thumb.php';
     <meta charset=utf-8>
     <title>Art byBrynn - Art - Portfolio works</title>
     <meta name="description" content="A collection of past painted works">
+    <meta property="og:title" content="Art byBrynn - Art - Portfolio works">
+    <meta property="og:description" content="A collection of past painted works">
+    <meta name="twitter:title" content="Art byBrynn - Art - Portfolio works">
+    <meta name="twitter:description" content="A collection of past painted works">
+    <meta name="twitter:card" content="summary">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords"
         content="art, bybrynn, paintings, portfolio, shop, commissions, photography, artist, brynn, bybrynn">

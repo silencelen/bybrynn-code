@@ -13,6 +13,10 @@ document.addEventListener("DOMContentLoaded", () => {
       document.title = entry.metaTitle;
       document.getElementById("meta-title").textContent = entry.metaTitle;
       document.getElementById("meta-desc").setAttribute("content", entry.description);
+      document.getElementById("og-title").setAttribute("content", entry.metaTitle);
+      document.getElementById("og-desc").setAttribute("content", entry.description);
+      document.getElementById("twitter-title").setAttribute("content", entry.metaTitle);
+      document.getElementById("twitter-desc").setAttribute("content", entry.description);
       document.getElementById("meta-onion").setAttribute("content", entry.onion);
 
       document.getElementById("art-title").textContent = entry.title;
