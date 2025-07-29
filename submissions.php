@@ -257,6 +257,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="utf-8">
     <title>Submission Portal</title>
+    <meta name="description" content="Submit your own artwork to Art byBrynn using this secure portal.">
+    <meta property="og:title" content="Submission Portal">
+    <meta property="og:description" content="Submit your own artwork to Art byBrynn using this secure portal.">
+    <meta name="twitter:title" content="Submission Portal">
+    <meta name="twitter:description" content="Submit your own artwork to Art byBrynn using this secure portal.">
+    <meta name="twitter:card" content="summary">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel=stylesheet>
     <link rel=stylesheet href=/cssrepo/bootstraps/bootstrap.css>
     <link rel="stylesheet" href="/cssrepo/global_style.css">
