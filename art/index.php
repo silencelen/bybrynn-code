@@ -10,16 +10,16 @@ require_once __DIR__ . '/../thumb.php';
 
 <head>
     <meta charset=utf-8>
-    <title>Art byBrynn - Art - Portfolio works</title>
-    <meta name="description" content="A collection of past painted works">
-    <meta property="og:title" content="Art byBrynn - Art - Portfolio works">
-    <meta property="og:description" content="A collection of past painted works">
-    <meta name="twitter:title" content="Art byBrynn - Art - Portfolio works">
-    <meta name="twitter:description" content="A collection of past painted works">
+    <title>Art by Brynn - Art - Portfolio works | Brynn Monahan</title>
+    <meta name="description" content="Art by Brynn (Bybrynn) - A collection of past painted works">
+    <meta property="og:title" content="Art by Brynn - Art - Portfolio works">
+    <meta property="og:description" content="Art by Brynn (Bybrynn) - A collection of past painted works">
+    <meta name="twitter:title" content="Art by Brynn - Art - Portfolio works">
+    <meta name="twitter:description" content="Art by Brynn (Bybrynn) - A collection of past painted works">
     <meta name="twitter:card" content="summary">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords"
-        content="art, bybrynn, paintings, portfolio, shop, commissions, photography, artist, brynn, bybrynn">
+        content="art by brynn, bybrynn, brynn monahan, art, bybrynn, paintings, portfolio, shop, commissions, photography, artist, brynn, bybrynn">
     <meta name="author" content=BrynnMonahan>
     <meta http-equiv="onion-location"
         content="http://artbybryndkmgb6ach4uqhrhsfkqbtcf3vrptfkljhclc3bxk74giwid.onion/T/art">
@@ -38,13 +38,14 @@ require_once __DIR__ . '/../thumb.php';
             max-width: 60px
         }
     </style>
+    <link rel="canonical" href="https://bybrynn.com/art/" />
 </head> 
 <body class="fade">
       <a class=fixed href=https://www.instagram.com/bybrynnm/ target=_blank><img src=/images/insta.png></a>  
     <header id=fh5co-header role=banner>
         <div class="container text-center">
             <div id="fh5co-logo">
-                <a href="/"><img src="/images/logo.webp" alt="Home-Art_by_brynn"></a>
+                <a href="/"><img src="/images/logo.webp" alt="Art by Brynn logo"></a>
             </div>
             <nav>
                 <ul>
