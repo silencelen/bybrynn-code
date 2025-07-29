@@ -176,7 +176,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $newEntry = [
             'subheading'  => "$medium - $dimensions - $year",
-            'metaTitle'   => "Art byBrynn - $title - Portfolio works",
+            'metaTitle'   => "Art by Brynn - $title - Portfolio works",
             'title'       => $title,
             'description' => $description,
             'onion'       => "http://artbybryndkmgb6ach4uqhrhsfkqbtcf3vrptfkljhclc3bxk74giwid.onion/T/art/$slug",
@@ -257,11 +257,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="utf-8">
     <title>Submission Portal</title>
-    <meta name="description" content="Submit your own artwork to Art byBrynn using this secure portal.">
+    <meta name="description" content="Art by Brynn (Bybrynn) - Submit your own artwork to Art by Brynn using this secure portal.">
     <meta property="og:title" content="Submission Portal">
-    <meta property="og:description" content="Submit your own artwork to Art byBrynn using this secure portal.">
+    <meta property="og:description" content="Art by Brynn (Bybrynn) - Submit your own artwork to Art by Brynn using this secure portal.">
     <meta name="twitter:title" content="Submission Portal">
-    <meta name="twitter:description" content="Submit your own artwork to Art byBrynn using this secure portal.">
+    <meta name="twitter:description" content="Art by Brynn (Bybrynn) - Submit your own artwork to Art by Brynn using this secure portal.">
     <meta name="twitter:card" content="summary">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel=stylesheet>
     <link rel=stylesheet href=/cssrepo/bootstraps/bootstrap.css>
@@ -277,12 +277,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     </style>
     <a class=fixed href=https://www.instagram.com/bybrynnm/ target=_blank><img src=/images/insta.png alt="Instagram"></a>
+    <link rel="canonical" href="https://bybrynn.com/submissions.php" />
 </head>
 <body class="fade">
     <header id=fh5co-header role=banner>
         <div class="container text-center">
             <div id="fh5co-logo">
-                <a href="/"><img src="/images/logo.webp" alt="Home-Art_by_brynn"></a>
+                <a href="/"><img src="/images/logo.webp" alt="Art by Brynn logo"></a>
             </div>
             <nav>
                 <ul>
